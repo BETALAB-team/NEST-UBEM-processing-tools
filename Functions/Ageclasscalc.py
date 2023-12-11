@@ -1,8 +1,9 @@
 from qgis.core import QgsExpressionFunction, QgsFeature, QgsGeometry, QgsField, QgsExpression
 import math
+import numpy as np
 @qgsfunction(args='auto', group='Custom', referenced_columns=[])
-def GetAgeClass(randomnumber,feature, parent):
-    agerandom=randomnumber
+def GetAgeClass(feature, parent):
+    agerandom=np.random.rand()
     CumulativeProbAge1 = feature['P[0000-1919]']
     CumulativeProbAge2 = feature['P[1920-1945]'] + CumulativeProbAge1
     CumulativeProbAge3 = feature['P[1946-1960]'] + CumulativeProbAge2

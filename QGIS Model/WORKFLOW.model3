@@ -317,6 +317,67 @@
         </Option>
       </Option>
     </Option>
+    <Option name="project:EurecaInputMaker_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="project:EurecaInputMaker" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="2075.6000000000004" name="component_pos_x" type="double"/>
+        <Option value="418.20000000000005" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="EurecaInputMaker" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="1891.6000000000001" name="component_pos_x" type="double"/>
+      <Option value="452.40000000000003" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="project:EurecaInputMaker_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Buildings_Eureca_input" type="Map">
+          <Option value="project:EurecaInputMaker_1" name="child_id" type="QString"/>
+          <Option value="" name="color" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option value="" name="color" type="QString"/>
+            <Option value="" name="component_description" type="QString"/>
+            <Option value="60" name="component_height" type="double"/>
+            <Option value="0" name="component_pos_x" type="double"/>
+            <Option value="0" name="component_pos_y" type="double"/>
+            <Option value="100" name="component_width" type="double"/>
+            <Option value="true" name="outputs_collapsed" type="bool"/>
+            <Option value="true" name="parameters_collapsed" type="bool"/>
+          </Option>
+          <Option value="Buildings_Eureca_input" name="component_description" type="QString"/>
+          <Option value="30" name="component_height" type="double"/>
+          <Option value="1898.8000000000004" name="component_pos_x" type="double"/>
+          <Option value="519.4000000000001" name="component_pos_y" type="double"/>
+          <Option value="200" name="component_width" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="Buildings_Eureca_input" name="name" type="QString"/>
+          <Option value="input" name="output_name" type="QString"/>
+          <Option value="true" name="outputs_collapsed" type="bool"/>
+          <Option value="true" name="parameters_collapsed" type="bool"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="calculated_buildings" type="List">
+          <Option type="Map">
+            <Option value="project:PostCalculation_1" name="child_id" type="QString"/>
+            <Option value="calculated_buildings" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="project:Join Section Data_1" type="Map">
       <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
@@ -437,33 +498,7 @@
       <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
       <Option value="project:PostCalculation_1" name="id" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="Buildings" type="Map">
-          <Option value="project:PostCalculation_1" name="child_id" type="QString"/>
-          <Option value="" name="color" type="QString"/>
-          <Option name="comment" type="Map">
-            <Option value="" name="color" type="QString"/>
-            <Option value="" name="component_description" type="QString"/>
-            <Option value="60" name="component_height" type="double"/>
-            <Option value="0" name="component_pos_x" type="double"/>
-            <Option value="0" name="component_pos_y" type="double"/>
-            <Option value="100" name="component_width" type="double"/>
-            <Option value="true" name="outputs_collapsed" type="bool"/>
-            <Option value="true" name="parameters_collapsed" type="bool"/>
-          </Option>
-          <Option value="Buildings" name="component_description" type="QString"/>
-          <Option value="30" name="component_height" type="double"/>
-          <Option value="1893.8" name="component_pos_x" type="double"/>
-          <Option value="455.3999999999994" name="component_pos_y" type="double"/>
-          <Option value="200" name="component_width" type="double"/>
-          <Option name="default_value" type="invalid"/>
-          <Option value="false" name="mandatory" type="bool"/>
-          <Option value="Buildings" name="name" type="QString"/>
-          <Option value="calculated_buildings" name="output_name" type="QString"/>
-          <Option value="true" name="outputs_collapsed" type="bool"/>
-          <Option value="true" name="parameters_collapsed" type="bool"/>
-        </Option>
-      </Option>
+      <Option name="outputs"/>
       <Option value="true" name="outputs_collapsed" type="bool"/>
       <Option value="true" name="parameters_collapsed" type="bool"/>
       <Option name="params" type="Map">
@@ -630,20 +665,20 @@
       <Option value="borders" name="name" type="QString"/>
       <Option value="vector" name="parameter_type" type="QString"/>
     </Option>
-    <Option name="buildings" type="Map">
+    <Option name="buildings_eureca_input" type="Map">
       <Option value="true" name="create_by_default" type="bool"/>
       <Option value="-1" name="data_type" type="int"/>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="Buildings" name="description" type="QString"/>
+      <Option value="Buildings_Eureca_input" name="description" type="QString"/>
       <Option value="0" name="flags" type="int"/>
       <Option value="" name="help" type="QString"/>
       <Option name="metadata" type="Map">
-        <Option value="project:PostCalculation_1" name="_modelChildId" type="QString"/>
-        <Option value="Buildings" name="_modelChildOutputName" type="QString"/>
+        <Option value="project:EurecaInputMaker_1" name="_modelChildId" type="QString"/>
+        <Option value="Buildings_Eureca_input" name="_modelChildOutputName" type="QString"/>
         <Option value="project" name="_modelChildProvider" type="QString"/>
       </Option>
-      <Option value="buildings" name="name" type="QString"/>
+      <Option value="buildings_eureca_input" name="name" type="QString"/>
       <Option value="sink" name="parameter_type" type="QString"/>
       <Option value="true" name="supports_append" type="bool"/>
       <Option value="true" name="supports_non_file_outputs" type="bool"/>

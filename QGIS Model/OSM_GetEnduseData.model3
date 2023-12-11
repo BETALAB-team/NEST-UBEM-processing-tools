@@ -1,77 +1,6 @@
 <!DOCTYPE model>
 <Option type="Map">
   <Option name="children" type="Map">
-    <Option name="native:buffer_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
-      <Option name="alg_config"/>
-      <Option value="native:buffer" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="change points to polygons so they can be spatially indexed" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="1528" name="component_pos_x" type="double"/>
-        <Option value="211.79999999999998" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
-      </Option>
-      <Option value="Buffer plg amenities" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="1520" name="component_pos_x" type="double"/>
-      <Option value="256.80000000000007" name="component_pos_y" type="double"/>
-      <Option value="118.40000000000008" name="component_width" type="double"/>
-      <Option name="dependencies"/>
-      <Option value="native:buffer_1" name="id" type="QString"/>
-      <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="DISSOLVE" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="false" name="static_value" type="bool"/>
-          </Option>
-        </Option>
-        <Option name="DISTANCE" type="List">
-          <Option type="Map">
-            <Option value="@buff_dist" name="expression" type="QString"/>
-            <Option value="3" name="source" type="int"/>
-          </Option>
-        </Option>
-        <Option name="END_CAP_STYLE" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="0" name="static_value" type="int"/>
-          </Option>
-        </Option>
-        <Option name="INPUT" type="List">
-          <Option type="Map">
-            <Option value="native:centroids_1" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
-          </Option>
-        </Option>
-        <Option name="JOIN_STYLE" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="1" name="static_value" type="int"/>
-          </Option>
-        </Option>
-        <Option name="MITER_LIMIT" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="2" name="static_value" type="double"/>
-          </Option>
-        </Option>
-        <Option name="SEGMENTS" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="5" name="static_value" type="int"/>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
     <Option name="native:buffer_2" type="Map">
       <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
@@ -89,8 +18,8 @@
       </Option>
       <Option value="Buffer pt amenities" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
-      <Option value="1400" name="component_pos_x" type="double"/>
-      <Option value="414.2000000000001" name="component_pos_y" type="double"/>
+      <Option value="1406.3999999999999" name="component_pos_x" type="double"/>
+      <Option value="413.0000000000001" name="component_pos_y" type="double"/>
       <Option value="118.40000000000008" name="component_width" type="double"/>
       <Option name="dependencies"/>
       <Option value="native:buffer_2" name="id" type="QString"/>
@@ -569,47 +498,6 @@
         </Option>
       </Option>
     </Option>
-    <Option name="native:centroids_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
-      <Option name="alg_config"/>
-      <Option value="native:centroids" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="Change polygons into points to ease calculation" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="1411.2000000000003" name="component_pos_x" type="double"/>
-        <Option value="210.8" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
-      </Option>
-      <Option value="Centroids Amenities" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="1395.2" name="component_pos_x" type="double"/>
-      <Option value="256.9999999999998" name="component_pos_y" type="double"/>
-      <Option value="131.19999999999993" name="component_width" type="double"/>
-      <Option name="dependencies"/>
-      <Option value="native:centroids_1" name="id" type="QString"/>
-      <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="ALL_PARTS" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="true" name="static_value" type="bool"/>
-          </Option>
-        </Option>
-        <Option name="INPUT" type="List">
-          <Option type="Map">
-            <Option value="native:retainfields_2" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
     <Option name="native:centroids_2" type="Map">
       <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
@@ -810,16 +698,16 @@
         <Option value="" name="color" type="QString"/>
         <Option value="Faster calculation" name="component_description" type="QString"/>
         <Option value="60" name="component_height" type="double"/>
-        <Option value="1727.7999999999995" name="component_pos_x" type="double"/>
-        <Option value="210.2" name="component_pos_y" type="double"/>
+        <Option value="1478.9999999999995" name="component_pos_x" type="double"/>
+        <Option value="211.39999999999998" name="component_pos_y" type="double"/>
         <Option value="100" name="component_width" type="double"/>
         <Option value="true" name="outputs_collapsed" type="bool"/>
         <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
       <Option value="Amenities Plg Spatial Index" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
-      <Option value="1678.9999999999998" name="component_pos_x" type="double"/>
-      <Option value="256" name="component_pos_y" type="double"/>
+      <Option value="1430.1999999999998" name="component_pos_x" type="double"/>
+      <Option value="257.2" name="component_pos_y" type="double"/>
       <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
       <Option value="native:createspatialindex_1" name="id" type="QString"/>
@@ -829,7 +717,7 @@
       <Option name="params" type="Map">
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="native:buffer_1" name="child_id" type="QString"/>
+            <Option value="native:retainfields_2" name="child_id" type="QString"/>
             <Option value="OUTPUT" name="output_name" type="QString"/>
             <Option value="1" name="source" type="int"/>
           </Option>
@@ -1028,8 +916,8 @@
       </Option>
       <Option value="Amenities Pt Spatial Index" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
-      <Option value="1559.1999999999998" name="component_pos_x" type="double"/>
-      <Option value="413.40000000000003" name="component_pos_y" type="double"/>
+      <Option value="1554.7999999999997" name="component_pos_x" type="double"/>
+      <Option value="414.2000000000001" name="component_pos_y" type="double"/>
       <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
       <Option value="native:createspatialindex_2" name="id" type="QString"/>
@@ -1039,7 +927,7 @@
       <Option name="params" type="Map">
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="native:buffer_1" name="child_id" type="QString"/>
+            <Option value="native:buffer_2" name="child_id" type="QString"/>
             <Option value="OUTPUT" name="output_name" type="QString"/>
             <Option value="1" name="source" type="int"/>
           </Option>
