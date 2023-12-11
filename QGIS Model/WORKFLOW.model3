@@ -453,23 +453,13 @@
           </Option>
           <Option value="Buildings" name="component_description" type="QString"/>
           <Option value="30" name="component_height" type="double"/>
-          <Option value="1889.3999999999999" name="component_pos_x" type="double"/>
-          <Option value="450.5999999999994" name="component_pos_y" type="double"/>
+          <Option value="1893.8" name="component_pos_x" type="double"/>
+          <Option value="455.3999999999994" name="component_pos_y" type="double"/>
           <Option value="200" name="component_width" type="double"/>
-          <Option name="default_value" type="Map">
-            <Option value="QgsProcessingOutputLayerDefinition" name="class" type="QString"/>
-            <Option name="create_options" type="Map">
-              <Option value="windows-1252" name="fileEncoding" type="QString"/>
-            </Option>
-            <Option name="sink" type="Map">
-              <Option value="true" name="active" type="bool"/>
-              <Option value="1" name="type" type="int"/>
-              <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
-            </Option>
-          </Option>
-          <Option value="true" name="mandatory" type="bool"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
           <Option value="Buildings" name="name" type="QString"/>
-          <Option value="aaa" name="output_name" type="QString"/>
+          <Option value="calculated_buildings" name="output_name" type="QString"/>
           <Option value="true" name="outputs_collapsed" type="bool"/>
           <Option value="true" name="parameters_collapsed" type="bool"/>
         </Option>
@@ -643,18 +633,7 @@
     <Option name="buildings" type="Map">
       <Option value="true" name="create_by_default" type="bool"/>
       <Option value="-1" name="data_type" type="int"/>
-      <Option name="default" type="QgsProcessingOutputLayerDefinition">
-        <Option type="Map">
-          <Option name="create_options" type="Map">
-            <Option value="windows-1252" name="fileEncoding" type="QString"/>
-          </Option>
-          <Option name="sink" type="Map">
-            <Option value="true" name="active" type="bool"/>
-            <Option value="1" name="type" type="int"/>
-            <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
-          </Option>
-        </Option>
-      </Option>
+      <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
       <Option value="Buildings" name="description" type="QString"/>
       <Option value="0" name="flags" type="int"/>
@@ -721,7 +700,13 @@
       <Option value="vector" name="parameter_type" type="QString"/>
     </Option>
   </Option>
-  <Option name="parameterOrder"/>
+  <Option name="parameterOrder" type="StringList">
+    <Option value="borders" type="QString"/>
+    <Option value="heights_geoportale" type="QString"/>
+    <Option value="istat_csv_data" type="QString"/>
+    <Option value="istat_shapefile" type="QString"/>
+    <Option value="istat_height_calculation_method" type="QString"/>
+  </Option>
   <Option name="parameters" type="Map">
     <Option name="borders" type="Map">
       <Option value="" name="color" type="QString"/>
