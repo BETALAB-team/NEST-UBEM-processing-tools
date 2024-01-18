@@ -1,6 +1,6 @@
 # NEST PNRR task 8 4 7 repository
 
-This repository is a set of QGIS functions to process national GIS datasets to create the input file for an EUReCA UBEM
+This repository is a set of QGIS functions to process national GIS dataset to create the input file for a UBEM
 
 Steps to run the processor:
 
@@ -22,9 +22,11 @@ or directly cloning the repository.
 The project needs four input files. 
 
 1. Census tract shapefile for the desired region. This data is downloadable from [the ISTAT website.](https://www.istat.it/it/archivio/104317#accordions )
+
 The shapefile can be found under the section "**Basi territoriali - dati definitivi (1991-2011)**"
 
 2. Census tract indicators, which is a csv file that can be found in the [same link](https://www.istat.it/it/archivio/104317#accordions).
+
 This file can be found under the section "**Variabili censuarie (1991-2011)**"
 
 3. Height data from national geoportal. This data is a wfs data that can be queried with the following link:
@@ -33,7 +35,11 @@ This file can be found under the section "**Variabili censuarie (1991-2011)**"
 
 4. Shapefile defining the borders of the desired area. This shapefile can be made using basic polygons in the QGIS. 
 
-*Note: You can see a sample input in the zip file located at the "Example_Padova" folder*. *If you aim to use this example, you just need to extract the Data.zip file that is located in \Example_Padova\Data.zip*
+*Note: You can see a sample input in the zip file located at the "Example_Padova" folder*
+
+**If you are using the case of Padova, you just need to extract the zip file that is located in**
+
+> Example_Padova\Data.zip
 
 
 ### 3. Open QGIS project
@@ -46,20 +52,17 @@ Or if you want to use the Padova case, open the respective file from:
 
 > Example_Padova\Padova_Project.qgz
 
+*If when the project is opened you get a security warning* <span style="background-color: #fcb103; color: black; padding: 3px;">**Security Warning:** Python macros cannot currently be run</span>, *make sure to click on the "enable macros" option*
 
-### 4. Add required functions to the QGIS profile
+### 4. Make Sure QuickOSM Plugin Is installed
 
-The QGIS model uses some custom functions that need to be uploaded to your QGIS instance. 
+This project uses the QuickOSM plugin to get the data from OpenStreetMap database.
 
-The steps to load these functions are:
-1. go to the path
-    > /Functions/
-2. Copy each python file (*files ending with '.py'*)
-3. Inside QGIS, in the menu bar, open the active profile folder
-    > Menu ribbon -> Setting -> User Profiles -> Open active profile folder
-4. In the opened folder, go to the following path:
-    > .\python\expressions\
-5. Paste the items from step 2 in this folder.
+If you have not yet installed this plugin go to the following section from the menu bar:
+
+> Menu ribbon -> Plugin -> Manage and Install Plugins
+
+Here search for the QuickOSM plugin and install it.
 
 ### 5. Run the project
 
@@ -72,5 +75,3 @@ In the QGIS project file, from the toolbox, open the process named "WORKFLOW". I
 Add the input files to the respective field. 
 
 Click on the Run
-
-The model can be also be edited, to change accordignly some of the internal processes
