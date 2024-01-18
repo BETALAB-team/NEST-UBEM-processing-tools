@@ -4,7 +4,7 @@ This repository is a set of QGIS functions to process national GIS dataset to cr
 
 Steps to run the processor:
 
-1) Download the repo either using the
+###1) Download the repo either using the
 
 > Code -> Download ZIP
 
@@ -12,7 +12,8 @@ and extracting it, or with a
 
 > git clone https://github.com/BETALAB-team/PNRR_847_GIS_workflow.git
 
-2) Example input data from the Padova case study in 
+
+###2) Example input data from the Padova case study in 
 
 > Padova -> Data.zip
 
