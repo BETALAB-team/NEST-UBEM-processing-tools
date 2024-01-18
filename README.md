@@ -21,11 +21,11 @@ or directly cloning the repository.
 
 The project needs four input files. 
 
-1. Census tract shapefile for the desired region. This data is downloadable from [link](https://www.istat.it/it/archivio/104317#accordions "the ISTAT website.")
+1. Census tract shapefile for the desired region. This data is downloadable from [the ISTAT website.](https://www.istat.it/it/archivio/104317#accordions )
 
 The shapefile can be found under the section "**Basi territoriali - dati definitivi (1991-2011)**"
 
-2. Census tract indicators, which is a csv file that can be found in the [link](https://www.istat.it/it/archivio/104317#accordions "same link").
+2. Census tract indicators, which is a csv file that can be found in the [same link](https://www.istat.it/it/archivio/104317#accordions).
 
 This file can be found under the section "**Variabili censuarie (1991-2011)**"
 
