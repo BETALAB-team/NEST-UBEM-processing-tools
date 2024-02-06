@@ -25,7 +25,7 @@ Open the QGIS project 'Project_Cagliari_StudyArea.qgz' with loaded GIS input lay
 ### 4. Install QuickOSM
 Get sure to have properly installed the open-source plugin for QGIS 'QuickOSM' to access OpenStreetMap open datasets
 
-### 5. Add required functions to the QGIS profile
+### 5. Add custom functions to the QGIS profile
 
 The QGIS model uses some custom functions that need to be added to your QGIS Profile. 
 
@@ -34,6 +34,15 @@ Follow the steps below:
     > Repository_UNICA/QGIS_PythonFunctions/
 2. Copy each python file (*files ending with '.py'*)
 3. Open the folder 'expressions' through the following path from QGIS
-   > Menu ribbon -> Setting -> User Profiles -> Open active profile folder -> python -> expressions
+   > Menu bar -> Setting -> User Profiles -> Open active profile folder -> python -> expressions
 5. Paste the items from step 2 in this folder.
+
+### 6. Open the QGIS Graphical Model inside QGIS
+Follow the path below
+> Menu bar -> Processing -> Model Designer -> Open Model
+
+and select the file 'WORKFLOW_UNICA.model3' included in the repository
+
+> Repository_UNICA/QGIS_GraphicalModels/WORKFLOW_UNICA.model3
+
 
