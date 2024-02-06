@@ -1,4 +1,4 @@
-# PNRR T8.4.7 - UNICA Repository (README)
+# PNRR NEST T8.4.7 - UNICA Repository (README)
 
 This repository includes a set of QGIS graphical models allowing an automatic execution of pre-processing operations on open GIS datasets (concerning a selected study area in Cagliari, Italy) to generate a suitable input file for an EUReCA-based UBEM
 
