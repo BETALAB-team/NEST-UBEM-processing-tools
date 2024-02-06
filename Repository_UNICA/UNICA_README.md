@@ -5,4 +5,10 @@ This repository includes a set of QGIS graphical models allowing an automatic ex
 ## 1. Download the folder ‘Repository_UNICA’ and extract the data
 Download the repository to your local storage and extract the related data if included in a compressed folder
 
+> Code -> Download ZIP
+
+or directly cloning the repository.
+
+> git clone https://github.com/BETALAB-team/PNRR_847_GIS_workflow/Repository_UNICA.git
+
 ## 2. Extract QGIS input layers from the folder ‘QGIS Project_CagliariInputData.rar’
