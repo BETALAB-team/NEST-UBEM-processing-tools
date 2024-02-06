@@ -45,4 +45,9 @@ and select the file 'WORKFLOW_UNICA.model3' included in the repository
 
 > Repository_UNICA/QGIS_GraphicalModels/WORKFLOW_UNICA.model3
 
+### 7. Run the QGIS Graphical Model
+1. Get sure you have an active internet connection
+2. Assign the input layers properly to te respective input nodes of the graphical model 'WORKFLOW_UNICA.model3'
+3. Click on 'Run Model'.
+
 
