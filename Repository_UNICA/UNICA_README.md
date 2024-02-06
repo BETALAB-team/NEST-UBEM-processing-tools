@@ -1,6 +1,6 @@
 # PNRR T8.4.7 - UNICA Repository (README)
 
-This repository includes a set of QGIS graphical models allowing an automatic execution of pre-processing operations on open GIS datasets to generate a suitable input file for an EUReCA-based UBEM
+This repository includes a set of QGIS graphical models allowing an automatic execution of pre-processing operations on open GIS datasets (concerning a selected study area in Cagliari) to generate a suitable input file for an EUReCA-based UBEM
 
 ### 1. Download the folder ‘Repository_UNICA’ and extract the data
 Download the repository to your local storage and extract the related data if included in a compressed folder
