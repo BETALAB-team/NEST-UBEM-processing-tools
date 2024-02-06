@@ -12,8 +12,8 @@ Extract QGIS input layers from the folder â€˜QGISProject_CagliariInputData.rarâ€
 > Repository_UNICA/QGIS_Project/QGISProject_CagliariInputData.rar
 
 *Note that all input datasets are freely available on the following data sources:
-1. ISTAT census sections (shape file) https://www.istat.it/it/archivio/104317#accordions
-2. ISTAT census indicators (csv file) https://www.istat.it/it/archivio/104317#accordions
+1. ISTAT census sections (shapefile can be found under the section "**Basi territoriali - dati definitivi (1991-2011)**") https://www.istat.it/it/archivio/104317#accordions
+2. ISTAT census indicators (csv file can be found under the section "**Variabili censuarie (1991-2011)**") https://www.istat.it/it/archivio/104317#accordions
 3. Geo-Topographic Database of Sardinian cities (shape files) https://www.sardegnageoportale.it/index.php?xsl=2420&s=40&v=9&c=95648&na=1&n=10&esp=1&tb=14401
 
 ### 3. Open QGIS project
@@ -22,4 +22,5 @@ Open the QGIS project 'Project_Cagliari_StudyArea.qgz' with loaded GIS input lay
 
 ### 4. Install QuickOSM
 Get sure to have properly installed the open-source plugin for QGIS 'QuickOSM' to access OpenStreetMap open datasets
-> 
+
+
