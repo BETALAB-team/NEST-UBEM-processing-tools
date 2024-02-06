@@ -9,7 +9,7 @@ Download the repository to your local storage and extract the related data if in
 
 or directly cloning the repository.
 
-> git clone https://github.com/BETALAB-team/PNRR_847_GIS_workflow/Repository_UNICA.git
+> git clone https://github.com/BETALAB-team/PNRR_847_GIS_workflow/Repository_UNICA
 
 ### 2. Get QGIS input datasets
 Extract QGIS input layers from the folder ‘QGISProject_CagliariInputData.rar’ 
