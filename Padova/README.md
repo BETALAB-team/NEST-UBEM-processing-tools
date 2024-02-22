@@ -1,6 +1,6 @@
 # Create Padova's UBEM
 
-Inside the *Padova/Data.zip* archive, you can find the starting data to run the Padova project. The project needs four input files. 
+Inside the *Padova/PadovaSampleInputs.zip* archive, you can find the starting data to run the Padova project. The project needs four input files. 
 
 1. Census tract shapefile for the desired region. This data is downloadable from the [ISTAT](https://www.istat.it/it/archivio/104317#accordions) website. 
 The shapefile can be found under the section **Basi territoriali - dati definitivi (1991-2011)**
