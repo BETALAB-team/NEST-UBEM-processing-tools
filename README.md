@@ -1,8 +1,6 @@
-# NEST PNRR task 8 4 7 repository
+# NEST UBEM processing tools
 
-This repository is a set of QGIS functions to process national GIS dataset to create the input file for a UBEM
-
-Steps to run the processor:
+This repository includes a set of QGIS processing models to create UBEM input dataset for a quick simulation in the [EUReCA](https://github.com/BETALAB-team/EUReCA) environment, starting from national GIS datasets. The project has been carried on in the context of the PNRR project NEST, task 8.4.7 (see below for futher information).
 
 ### 1. Download the repository
 
@@ -75,3 +73,5 @@ In the QGIS project file, from the toolbox, open the process named "WORKFLOW". I
 Add the input files to the respective field. 
 
 Click on the Run
+
+## Reference
