@@ -47,4 +47,13 @@ If necessary, refer to the official [QGIS plugin guide](https://www.qgistutorial
 
 Example files concerning [Padova](https://github.com/BETALAB-team/PNRR_847_GIS_workflow/tree/dev/Padova) and [Cagliari](https://github.com/BETALAB-team/PNRR_847_GIS_workflow/tree/dev/Cagliari) are provided with proper documentation. Try to open one project extract from national databases 
 
-## Reference
+## Acknowledgements
+
+- **Funder**: Project funded under the National Recovery and Resilience Plan (NRRP), Mission 4 Component 2 Investment 1.3 - Call for tender No. 1561 of 11.10.2022 of Ministero dell’Uni-
+versità e della Ricerca (MUR); funded by the European Union – NextGenerationEU
+
+- **Award Number**: Project code PE0000021, Concession Decree No. 1561 of 11.10.2022 adop-
+ted by Ministero dell’Università e della Ricerca (MUR), CUP - to be indicated by each Beneficiary, according to attachment E of Decree No. 1561/2022, Project title “Network 4 Energy Sustainable Transition – NEST”
+
+![](EU_Logo_PANTONE.png)
+
