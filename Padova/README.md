@@ -1,6 +1,7 @@
 # Create Padova's UBEM
 
-Inside the *Padova/PadovaSampleInputs.zip* archive, you can find the starting data to run the Padova project. The project needs four input files. 
+### Model creation
+Inside the **Padova/PadovaSampleInputs.zip** archive, you can find the starting data to run the Padova project. The project needs four input files. 
 
 1. Census tract shapefile for the desired region. This data is downloadable from the [ISTAT](https://www.istat.it/it/archivio/104317#accordions) website. 
 The shapefile can be found under the section **Basi territoriali - dati definitivi (1991-2011)**
@@ -12,33 +13,20 @@ This file can be found under the section **Variabili censuarie (1991-2011)**
 
 2. A shapefile defining the borders of the desired area. This shapefile can be made using basic polygons in the QGIS. 
 
-*Note: You can see a sample input in the zip file located at the "Example_Padova" folder*
+Start just extracting the zip file to get this default files for Padova. 
 
-**If you are using the case of Padova, you just need to extract the zip file that is located in**
+> Example_Padova\Padova/PadovaSampleInputs.zip
 
-> Example_Padova\Data.zip
+### Open QGIS project
+
+Open the project file:
+
+> Padova\Padova_Project.qgz
+
+### Run the project
+
+Make sure to have an active internet connection. From the processing toolbox, open the process *Models/ubem_creation_Padova*. Add the input files to the respective field as shown in the Figure:
 
 
-### 3. Open QGIS project
 
-Open the project file 
-
-> Project\Project.qgz
-
-Or if you want to use the Padova case, open the respective file from:
-
-> Example_Padova\Padova_Project.qgz
-
-*If when the project is opened you get a security warning* <span style="background-color: #fcb103; color: black; padding: 3px;">**Security Warning:** Python macros cannot currently be run</span>, *make sure to click on the "enable macros" option*
-
-### 5. Run the project
-
-Make sure to have an active internet connection.
-
-In the QGIS project file, from the toolbox, open the process named "WORKFLOW". It is found in:
-
-> Processing Toolbox -> Project models -> WORKFLOW
-
-Add the input files to the respective field. 
-
-Click on the Run
+Click on Run to get the Padova UBEM. This process will print a new shapefile, ready to use in the [EUReCA](https://github.com/BETALAB-team/EUReCA) UBEM software to run UBEm simulations.
