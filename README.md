@@ -26,7 +26,7 @@ To load the NEST processing tools:
 3. Move to the *Processing* tab, inside models. 
 4. Add the *path/to/the/repo/collections/nest_processing/tools* path to your list of models paths:
 
-![Alt text](image.png)
+![](image.png =100x)
 
 5. Click ok to load the models.
 6. Inside yor processing toolbar, in the models section, you can find the NEST UBEM processing algorithms
