@@ -27,6 +27,6 @@ Open the project file:
 
 Make sure to have an active internet connection. From the processing toolbox, open the process *Models/ubem_creation_Padova*. Add the input files to the respective field as shown in the Figure:
 
-
+                                ***Immagine***
 
 Click on Run to get the Padova UBEM. This process will print a new shapefile, ready to use in the [EUReCA](https://github.com/BETALAB-team/EUReCA) UBEM software to run UBEm simulations.
