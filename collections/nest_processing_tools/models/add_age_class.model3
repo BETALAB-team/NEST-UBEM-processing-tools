@@ -1,0 +1,165 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="qgis:advancedpythonfieldcalculator_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:advancedpythonfieldcalculator" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="990" name="component_pos_x" type="double"/>
+        <Option value="261" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="add_env_type" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="534" name="component_pos_x" type="double"/>
+      <Option value="210" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:advancedpythonfieldcalculator_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="age_class_added" type="Map">
+          <Option value="qgis:advancedpythonfieldcalculator_1" name="child_id" type="QString"/>
+          <Option value="" name="color" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option value="" name="color" type="QString"/>
+            <Option value="" name="component_description" type="QString"/>
+            <Option value="60" name="component_height" type="double"/>
+            <Option value="0" name="component_pos_x" type="double"/>
+            <Option value="0" name="component_pos_y" type="double"/>
+            <Option value="100" name="component_width" type="double"/>
+            <Option value="true" name="outputs_collapsed" type="bool"/>
+            <Option value="true" name="parameters_collapsed" type="bool"/>
+          </Option>
+          <Option value="age_class_added" name="component_description" type="QString"/>
+          <Option value="30" name="component_height" type="double"/>
+          <Option value="778" name="component_pos_x" type="double"/>
+          <Option value="209" name="component_pos_y" type="double"/>
+          <Option value="200" name="component_width" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="age_class_added" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+          <Option value="true" name="outputs_collapsed" type="bool"/>
+          <Option value="true" name="parameters_collapsed" type="bool"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="20" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="EnvelopeType" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="15" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="2" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="value = get_age_class(&quot;0000-1919&quot;,&quot;1920-1945&quot;,&quot;1946-1960&quot;,&quot;1961-1970&quot;,&quot;1971-1980&quot;,&quot;1981-1990&quot;,&quot;1991-2000&quot;,&quot;2001-2005&quot; )" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="GLOBAL" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="import numpy as np&#xa;&#xa;def get_age_class(par_1,par_2,par_3,par_4,par_5,par_6,par_7,par_8):&#xa; agerandom=np.random.rand()&#xa; CumulativeProbAge1 = par_1&#xa; CumulativeProbAge2 = par_2 + CumulativeProbAge1&#xa; CumulativeProbAge3 = par_3+ CumulativeProbAge2&#xa; CumulativeProbAge4 = par_4 + CumulativeProbAge3&#xa; CumulativeProbAge5 = par_5 + CumulativeProbAge4&#xa; CumulativeProbAge6 = par_6 + CumulativeProbAge5&#xa; CumulativeProbAge7 = par_7 + CumulativeProbAge6&#xa; CumulativeProbAge8 = par_8 + CumulativeProbAge7&#xa; if(agerandom&lt;CumulativeProbAge1):&#xa;     result='0000-1919'&#xa; elif(agerandom&lt;CumulativeProbAge2):&#xa;     result='1920-1945'&#xa; elif(agerandom&lt;CumulativeProbAge3):&#xa;     result='1946-1960'&#xa; elif(agerandom&lt;CumulativeProbAge4):&#xa;     result='1961-1970'&#xa; elif(agerandom&lt;CumulativeProbAge5):&#xa;     result='1971-1980' &#xa; elif(agerandom&lt;CumulativeProbAge6):&#xa;     result='1981-1990'&#xa; elif(agerandom&lt;CumulativeProbAge7):&#xa;     result='1991-2000'&#xa; elif(agerandom&lt;CumulativeProbAge8):&#xa;     result='2001-2005'&#xa; else:&#xa;    result='2006-3000'&#xa; return result" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="vettore" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues" type="Map">
+    <Option value="GeoportaleNazionale_Altezza_Padova_37795a3e_6464_4f81_a5d1_fda0b5fa5240" name="vettore" type="QString"/>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option value="Version2" name="internal_version" type="QString"/>
+  <Option name="modelVariables"/>
+  <Option value="" name="model_group" type="QString"/>
+  <Option value="add_age_class" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="age_class_added" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="age_class_added" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option name="metadata" type="Map">
+        <Option value="qgis:advancedpythonfieldcalculator_1" name="_modelChildId" type="QString"/>
+        <Option value="age_class_added" name="_modelChildOutputName" type="QString"/>
+        <Option value="qgis" name="_modelChildProvider" type="QString"/>
+      </Option>
+      <Option value="age_class_added" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="false" name="supports_append" type="bool"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+    <Option name="vettore" type="Map">
+      <Option name="data_types"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="vettore" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="vettore" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters" type="Map">
+    <Option name="vettore" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="320" name="component_pos_x" type="double"/>
+        <Option value="15" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="vettore" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="259" name="component_pos_x" type="double"/>
+      <Option value="210" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="vettore" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+  </Option>
+</Option>
