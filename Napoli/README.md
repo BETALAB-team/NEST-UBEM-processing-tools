@@ -1,43 +1,66 @@
-# PNRR NEST T8.4.7 - UNINA Case study 
+# Urban spatial energy analysis and clustering (Napoli example)
 
-This repository includes a set of QGIS graphical models allowing an automatic execution of pre-processing operations on open GIS datasets (concerning a selected study area in Cagliari, Italy) to generate a suitable input file for an EUReCA-based UBEM
+This directory holds sample files to run GIS-based statistical and spatial analyses to interpret how different urban features can affect the energy consumption in a city, and how urban environments can be clusterized to run early stage energy analyses and urban planning in the context of carbon reduction policies. In particular this methodology of the NEST UBEM processing tools provides a first shapefile of Napoli's census tracts already preprocessed, that can be used as an input file for the spatial analysis using [GWR4](https://gwr.maynoothuniversity.ie/gwr4-software/). 
 
-### Get QGIS input datasets
-From the folder *Cagliari*, extract *CagliariSampleInputs.rar*. This archive holds GIS input layers concerning the selected study area in Cagliari (Italy). The input included in this precompilated project are open data sources, similar to those used in the Padova project, that can be freely downloaded. In particular the data sources are: 
+The methodology consists in 3 major steps:
 
-1. ISTAT census sections (shapefile can be found under the section **Basi territoriali - dati definitivi (1991-2011)**) [ISTAT website](https://www.istat.it/it/archivio/104317#accordions)
-2. ISTAT census indicators (csv file can be found under the section **Variabili censuarie (1991-2011)**) [ISTAT website](https://www.istat.it/it/archivio/104317#accordions)
-3. Geo-Topographic Database (GTDB) of Sardinian cities (shape files of the city of Cagliari can be freely downloaded by clicking on the *CAGLIARI* archive) [Sardinia Geoportal](https://www.sardegnageoportale.it/index.php?xsl=2420&s=40&v=9&c=95648&na=1&n=10&esp=1&tb=14401)
+1. **Data collection and preprocessing**
+   
+   The first phase concerns the collection of data and preparation of the dataset, in this case run at the censu tract level. Following previous works on the topic,  a set of significant groups of variables was selected: environmental context, building stock characteristics, socio-economic condition, electric energy consumption. The results of this preprocessing is included in 
 
-*Note that only two layers (called CLASSES) of the Cagliari GTDB, both concerning buildings, are involved in the proposed workflow: the 'Volume Unit' class (Layer name: "**ST02TE01CL01**"), the 'Building Unit' class (Layer name: "**ST02TE01CL02**").
+2. **GWR statistical and spatial analyses**
+   
+   This phase consists of running ..
 
-### Open QGIS project
-Open the QGIS project 'Project_Cagliari_StudyArea.qgz' with loaded GIS input layers related to Cagliari study area
-> Cagliari/Project_Cagliari.qgz
+3. **Clustering**
+   
+   This phase consists of running ..
 
-### Add custom functions to the QGIS profile
+![alt text](image.png)
 
-The QGIS model uses some custom functions that need to be added to your QGIS Profile. 
+### Detailed list of considered variables
 
-Follow the steps below:
-1. go to the repository folder 'QGIS_PythonFunctions'
-    > Repository_UNICA/QGIS_PythonFunctions/
-2. Copy each python file (*files ending with '.py'*)
-3. Open the folder 'expressions' through the following path from QGIS
-   > Menu bar -> Setting -> User Profiles -> Open active profile folder -> python -> expressions
-5. Paste the items from step 2 in this folder.
-
-### Open the QGIS Graphical Model inside QGIS
-Follow the path below
-> Menu bar -> Processing -> Model Designer -> Open Model
-
-and select the file 'WORKFLOW_UNICA.model3' included in the repository
-
-> Repository_UNICA/QGIS_GraphicalModels/WORKFLOW_UNICA.model3
-
-### Run the QGIS Graphical Model
-1. Get sure you have an active internet connection
-2. Assign the input layers properly to te respective input nodes of the graphical model 'WORKFLOW_UNICA.model3'
-3. Click on 'Run Model'.
-
-
+-	Electrical energy demand
+-	Physical urban features:
+    -	Ratio between census tracts and residential buildings surfaces 
+    -	Density of residential building (ratio between the volume of residential buildings and territorial surface)
+    -	Average number of floors in residential buildings
+    -	Density of building per census tracts (ratio between number of buildings and census tract territorial surface)
+    -	Density of residential building per census tracts (ratio between number of residential buildings and census tract territorial surface)
+    -	Density of not-residential building per census tracts (ratio between number of not-residential buildings and census tract territorial surface)
+    -	Density of built areas (ratio between built volume and census tract territorial surfaces)
+    -	Average height of buildings per census tract
+    -	Ratio between average height of buildings and distance between façades on two street fronts
+    -	Average compactness ratio for residential buildings (ratio between envelope surface and volume)
+    -	Cover Index (ratio between built area and territorial surface)
+    -	Density of dwellings (ratio between number of dwellings per census tract and census tract territorial surface)
+    -	Density of rooms (ratio between number of rooms per census tract and census tract territorial surface)
+    -	Utilisation index (ratio between total surface of dwellings and territorial surface per census tract)
+    -	Utilisation index for occupied residential buildings (ratio between number of occupied dwellings and territorial surface per census tract)
+    -	Density of total population (ratio between total population and territorial surface)
+    -	Ratio between population aged between 0 and 19 and total population
+    -	Ratio between population aged between 20 and 64 and total population
+    -	ratio between population aged over 65 and total population 
+    -	Density of green areas (ratio between green surfaces and census tract territorial surfaces)
+    -	Density of masonry buildings (ratio between number of masonry buildings and census tract territorial surface)
+    -	Density of concrete buildings (ratio between number of concrete buildings and census tract territorial surface)
+    -	Residential buildings construction year classes
+    -	Green urban areas
+-	Socio-economic urban features:
+    -	Ratio between university graduated population and total population aged over 6
+    -	Ratio between high school graduated population and total population aged over 6
+    -	Ratio between elementary or middle school graduated population and total population aged over 6
+    -	Ratio between illiterate population and total population aged over 6
+    -	Ratio between population in workforce (aged over 15) and total population
+    -	Ratio between employed population and total population
+    -	Ratio between unemployed population and total population
+    -	Employment index (ratio between employed population and population in workforce)
+    -	Unemployment index (ratio between unemployed population and population in workforce)
+    -	Ratio between self-employed population and employed population
+    -	Ratio between employees and employed population
+    -	Population not in workforce
+    -	Ratio between annual household income and total population
+-	Environmental context features:
+    -	Annual average of maximum and minimum temperatures
+    -	Annual average precipitation
+    -	Macroclimatic zone
