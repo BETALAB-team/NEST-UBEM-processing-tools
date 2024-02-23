@@ -26,7 +26,8 @@ To load the NEST processing tools:
 3. Move to the *Processing* tab, inside models. 
 4. Add the *path/to/the/repo/collections/nest_processing/tools* path to your list of models paths:
 
-![](image.png)
+
+<center><img src="image.png" alt="" style="height: 500px"></center>
 
 5. Click ok to load the models.
 6. Inside yor processing toolbar, in the models section, you can find the NEST UBEM processing algorithms
@@ -55,5 +56,5 @@ versità e della Ricerca (MUR); funded by the European Union – NextGenerationE
 - **Award Number**: Project code PE0000021, Concession Decree No. 1561 of 11.10.2022 adop-
 ted by Ministero dell’Università e della Ricerca (MUR), CUP - to be indicated by each Beneficiary, according to attachment E of Decree No. 1561/2022, Project title “Network 4 Energy Sustainable Transition – NEST”
 
-![](EU_Logo_PANTONE.png)
 
+<center><img src="EU_Logo_PANTONE.png" alt="" style="height: 100px"></center>

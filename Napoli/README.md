@@ -16,7 +16,7 @@ The methodology consists in 3 major steps:
    
    This phase consists of running ..
 
-![alt text](image.png)
+<center><img src="image.png" alt="" style="height: 500px"></center>
 
 ### Detailed list of considered variables
 
