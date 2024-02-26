@@ -1,4 +1,7 @@
 .idea
+EUReCA/.idea/
+EUReCA/venv/
+EUReCA/logging.log
 QGIS Model
 Functions
 Project
