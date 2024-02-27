@@ -28,4 +28,4 @@ Make sure to have an active internet connection. From the processing toolbox, op
 
 <center><img src="Inputs.png" alt="" style="height: 300px"></center>
 
-Click on Run to get the Padova UBEM. This process will print a new shapefile, ready to use in the [EUReCA](https://github.com/BETALAB-team/EUReCA) UBEM software to run UBEm simulations.
+Click on Run to get the Cagliari UBEM input data. This process will print a new shapefile, ready to use in the [EUReCA](https://github.com/BETALAB-team/EUReCA) UBEM software to run UBEm simulations.
