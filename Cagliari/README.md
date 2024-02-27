@@ -1,4 +1,4 @@
-# UBEM creation from ope datasets (Cagliari example)
+# UBEM creation from open datasets (Cagliari example)
 
 This repository includes a set of QGIS graphical models allowing an automatic execution of pre-processing operations on open GIS datasets (concerning a selected study area in Cagliari, Italy) to generate a suitable input file for an EUReCA-based UBEM
 
@@ -11,33 +11,21 @@ From the folder *Cagliari*, extract *CagliariSampleInputs.rar*. This archive hol
 
 *Note that only two layers (called CLASSES) of the Cagliari GTDB, both concerning buildings, are involved in the proposed workflow: the 'Volume Unit' class (Layer name: "**ST02TE01CL01**"), the 'Building Unit' class (Layer name: "**ST02TE01CL02**").
 
+
+You can extract the zip file to get this default files for Padova. 
+
+> Cagliari\CagliariSampleInputs.rar
+
 ### Open QGIS project
-Open the QGIS project 'Project_Cagliari_StudyArea.qgz' with loaded GIS input layers related to Cagliari study area
-> Cagliari/Project_Cagliari.qgz
 
-### Add custom functions to the QGIS profile
+Open the project file:
 
-The QGIS model uses some custom functions that need to be added to your QGIS Profile. 
+> Cagliari\Project Cagliari.qgz
 
-Follow the steps below:
-1. go to the repository folder 'QGIS_PythonFunctions'
-    > Repository_UNICA/QGIS_PythonFunctions/
-2. Copy each python file (*files ending with '.py'*)
-3. Open the folder 'expressions' through the following path from QGIS
-   > Menu bar -> Setting -> User Profiles -> Open active profile folder -> python -> expressions
-5. Paste the items from step 2 in this folder.
+### Run the project
 
-### Open the QGIS Graphical Model inside QGIS
-Follow the path below
-> Menu bar -> Processing -> Model Designer -> Open Model
+Make sure to have an active internet connection. From the processing toolbox, open the process *Models/ubem_creation_Cagliari*. Add the input files to the respective field as shown in the Figure:
 
-and select the file 'WORKFLOW_UNICA.model3' included in the repository
+<center><img src="Inputs.png" alt="" style="height: 300px"></center>
 
-> Repository_UNICA/QGIS_GraphicalModels/WORKFLOW_UNICA.model3
-
-### Run the QGIS Graphical Model
-1. Get sure you have an active internet connection
-2. Assign the input layers properly to te respective input nodes of the graphical model 'WORKFLOW_UNICA.model3'
-3. Click on 'Run Model'.
-
-
+Click on Run to get the Padova UBEM. This process will print a new shapefile, ready to use in the [EUReCA](https://github.com/BETALAB-team/EUReCA) UBEM software to run UBEm simulations.

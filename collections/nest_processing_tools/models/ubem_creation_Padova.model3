@@ -635,7 +635,7 @@
   <Option type="QString" value="Version2" name="internal_version"/>
   <Option name="modelVariables"/>
   <Option type="QString" value="" name="model_group"/>
-  <Option type="QString" value="WORKFLOW" name="model_name"/>
+  <Option type="QString" value="ubem_creation_Padova" name="model_name"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="borders">
       <Option name="data_types"/>

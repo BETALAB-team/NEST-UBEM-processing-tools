@@ -1,4 +1,4 @@
-# UBEM creation from ope datasets (Padova example)
+# UBEM creation from open datasets (Padova example)
 
 ### Model creation
 Inside the **Padova/PadovaSampleInputs.zip** archive, you can find the starting data to run the Padova project. The project needs four input files. 
@@ -13,9 +13,9 @@ This file can be found under the section **Variabili censuarie (1991-2011)**
 
 2. A shapefile defining the borders of the desired area. This shapefile can be made using basic polygons in the QGIS. 
 
-Start just extracting the zip file to get this default files for Padova. 
+You can extract the zip file to get this default files for Padova. 
 
-> Example_Padova\Padova/PadovaSampleInputs.zip
+> Padova/PadovaSampleInputs.zip
 
 ### Open QGIS project
 
@@ -27,6 +27,6 @@ Open the project file:
 
 Make sure to have an active internet connection. From the processing toolbox, open the process *Models/ubem_creation_Padova*. Add the input files to the respective field as shown in the Figure:
 
-                                ***Immagine***
+<center><img src="inputs.png" alt="" style="height: 300px"></center>
 
 Click on Run to get the Padova UBEM. This process will print a new shapefile, ready to use in the [EUReCA](https://github.com/BETALAB-team/EUReCA) UBEM software to run UBEm simulations.

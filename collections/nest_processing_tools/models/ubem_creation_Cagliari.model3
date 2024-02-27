@@ -7,7 +7,7 @@
       <Option name="alg_id" value="model:OSM_GetEnduseData_UNICA" type="QString"/>
       <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
+        <Option name="color" value="" type="QString"/>m
         <Option name="component_description" value="Get specific end uses from OSM&#xa;" type="QString"/>
         <Option name="component_height" value="60" type="double"/>
         <Option name="component_pos_x" value="338" type="double"/>
@@ -3437,7 +3437,7 @@
   <Option name="internal_version" value="Version2" type="QString"/>
   <Option name="modelVariables"/>
   <Option name="model_group" value="" type="QString"/>
-  <Option name="model_name" value="modello" type="QString"/>
+  <Option name="model_name" value="ubem_creation_Cagliari" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="eureca_input" type="Map">
       <Option name="create_by_default" value="true" type="bool"/>
