@@ -12,7 +12,7 @@ From the folder *Cagliari*, extract *CagliariSampleInputs.rar*. This archive hol
 *Note that only two layers (called CLASSES) of the Cagliari GTDB, both concerning buildings, are involved in the proposed workflow: the 'Volume Unit' class (Layer name: "**ST02TE01CL01**"), the 'Building Unit' class (Layer name: "**ST02TE01CL02**").
 
 
-You can extract the zip file to get this default files for Padova. 
+You can extract the zip file to get this default files for Cagliari. 
 
 > Cagliari\CagliariSampleInputs.rar
 

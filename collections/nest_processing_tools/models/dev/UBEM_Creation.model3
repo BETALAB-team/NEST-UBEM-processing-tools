@@ -136,7 +136,7 @@
         </Option>
         <Option name="uedil" type="List">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="database_geotopografico_uedil"/>
+            <Option name="parameter_name" type="QString" value="gtdb_sardegna_uedil"/>
             <Option name="source" type="int" value="0"/>
           </Option>
         </Option>
@@ -327,7 +327,7 @@
       <Option name="params" type="Map">
         <Option name="altimetria" type="List">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="altimetria"/>
+            <Option name="parameter_name" type="QString" value="gtdb_lazio_edifici"/>
             <Option name="source" type="int" value="0"/>
           </Option>
         </Option>
@@ -352,7 +352,7 @@
         </Option>
         <Option name="uvol" type="List">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="database_geotopografico_uvol"/>
+            <Option name="parameter_name" type="QString" value="gtdb_sardegna_uvol"/>
             <Option name="source" type="int" value="0"/>
           </Option>
         </Option>
@@ -441,18 +441,9 @@
   <Option name="modelVariables"/>
   <Option name="model_group" type="QString" value=""/>
   <Option name="model_name" type="QString" value="UBEM Creation"/>
+  <Option name="outputGroup" type="QString" value=""/>
+  <Option name="outputOrder"/>
   <Option name="parameterDefinitions" type="Map">
-    <Option name="altimetria" type="Map">
-      <Option name="data_types"/>
-      <Option name="default" type="invalid"/>
-      <Option name="defaultGui" type="invalid"/>
-      <Option name="description" type="QString" value="Altimetria"/>
-      <Option name="flags" type="int" value="8"/>
-      <Option name="help" type="QString" value=""/>
-      <Option name="metadata"/>
-      <Option name="name" type="QString" value="altimetria"/>
-      <Option name="parameter_type" type="QString" value="vector"/>
-    </Option>
     <Option name="borders" type="Map">
       <Option name="data_types"/>
       <Option name="default" type="invalid"/>
@@ -481,28 +472,6 @@
       <Option name="parameter_type" type="QString" value="sink"/>
       <Option name="supports_append" type="bool" value="true"/>
       <Option name="supports_non_file_outputs" type="bool" value="true"/>
-    </Option>
-    <Option name="database_geotopografico_uedil" type="Map">
-      <Option name="data_types"/>
-      <Option name="default" type="invalid"/>
-      <Option name="defaultGui" type="invalid"/>
-      <Option name="description" type="QString" value="Database Geotopografico UEDIL"/>
-      <Option name="flags" type="int" value="8"/>
-      <Option name="help" type="QString" value=""/>
-      <Option name="metadata"/>
-      <Option name="name" type="QString" value="database_geotopografico_uedil"/>
-      <Option name="parameter_type" type="QString" value="vector"/>
-    </Option>
-    <Option name="database_geotopografico_uvol" type="Map">
-      <Option name="data_types"/>
-      <Option name="default" type="invalid"/>
-      <Option name="defaultGui" type="invalid"/>
-      <Option name="description" type="QString" value="Database Geotopografico UVOL"/>
-      <Option name="flags" type="int" value="8"/>
-      <Option name="help" type="QString" value=""/>
-      <Option name="metadata"/>
-      <Option name="name" type="QString" value="database_geotopografico_uvol"/>
-      <Option name="parameter_type" type="QString" value="vector"/>
     </Option>
     <Option name="default_cooling_system" type="Map">
       <Option name="default" type="QString" value="IdealLoad"/>
@@ -585,6 +554,39 @@
       <Option name="name" type="QString" value="geoportale"/>
       <Option name="parameter_type" type="QString" value="vector"/>
     </Option>
+    <Option name="gtdb_lazio_edifici" type="Map">
+      <Option name="data_types"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="GTDB Lazio Edifici"/>
+      <Option name="flags" type="int" value="8"/>
+      <Option name="help" type="QString" value=""/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="gtdb_lazio_edifici"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="gtdb_sardegna_uedil" type="Map">
+      <Option name="data_types"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="GTDB Sardegna UEDIL"/>
+      <Option name="flags" type="int" value="8"/>
+      <Option name="help" type="QString" value=""/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="gtdb_sardegna_uedil"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="gtdb_sardegna_uvol" type="Map">
+      <Option name="data_types"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="GTDB Sardegna UVOL"/>
+      <Option name="flags" type="int" value="8"/>
+      <Option name="help" type="QString" value=""/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="gtdb_sardegna_uvol"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
     <Option name="istat_csv_data" type="Map">
       <Option name="data_types" type="List">
         <Option type="int" value="5"/>
@@ -625,27 +627,6 @@
     <Option type="QString" value="default_cooling_system"/>
   </Option>
   <Option name="parameters" type="Map">
-    <Option name="altimetria" type="Map">
-      <Option name="color" type="QString" value=""/>
-      <Option name="comment" type="Map">
-        <Option name="color" type="QString" value=""/>
-        <Option name="component_description" type="QString" value=""/>
-        <Option name="component_height" type="double" value="60"/>
-        <Option name="component_pos_x" type="double" value="1158"/>
-        <Option name="component_pos_y" type="double" value="33.000000000000085"/>
-        <Option name="component_width" type="double" value="100"/>
-        <Option name="outputs_collapsed" type="bool" value="true"/>
-        <Option name="parameters_collapsed" type="bool" value="true"/>
-      </Option>
-      <Option name="component_description" type="QString" value="altimetria"/>
-      <Option name="component_height" type="double" value="60"/>
-      <Option name="component_pos_x" type="double" value="630"/>
-      <Option name="component_pos_y" type="double" value="120"/>
-      <Option name="component_width" type="double" value="120"/>
-      <Option name="name" type="QString" value="altimetria"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-    </Option>
     <Option name="borders" type="Map">
       <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
@@ -664,48 +645,6 @@
       <Option name="component_pos_y" type="double" value="240"/>
       <Option name="component_width" type="double" value="120"/>
       <Option name="name" type="QString" value="borders"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-    </Option>
-    <Option name="database_geotopografico_uedil" type="Map">
-      <Option name="color" type="QString" value=""/>
-      <Option name="comment" type="Map">
-        <Option name="color" type="QString" value=""/>
-        <Option name="component_description" type="QString" value=""/>
-        <Option name="component_height" type="double" value="60"/>
-        <Option name="component_pos_x" type="double" value="887.2"/>
-        <Option name="component_pos_y" type="double" value="550.6"/>
-        <Option name="component_width" type="double" value="100"/>
-        <Option name="outputs_collapsed" type="bool" value="true"/>
-        <Option name="parameters_collapsed" type="bool" value="true"/>
-      </Option>
-      <Option name="component_description" type="QString" value="database_geotopografico_uedil"/>
-      <Option name="component_height" type="double" value="60"/>
-      <Option name="component_pos_x" type="double" value="780"/>
-      <Option name="component_pos_y" type="double" value="240"/>
-      <Option name="component_width" type="double" value="120"/>
-      <Option name="name" type="QString" value="database_geotopografico_uedil"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-    </Option>
-    <Option name="database_geotopografico_uvol" type="Map">
-      <Option name="color" type="QString" value=""/>
-      <Option name="comment" type="Map">
-        <Option name="color" type="QString" value=""/>
-        <Option name="component_description" type="QString" value=""/>
-        <Option name="component_height" type="double" value="60"/>
-        <Option name="component_pos_x" type="double" value="1117.6000000000001"/>
-        <Option name="component_pos_y" type="double" value="137.0000000000001"/>
-        <Option name="component_width" type="double" value="100"/>
-        <Option name="outputs_collapsed" type="bool" value="true"/>
-        <Option name="parameters_collapsed" type="bool" value="true"/>
-      </Option>
-      <Option name="component_description" type="QString" value="database_geotopografico_uvol"/>
-      <Option name="component_height" type="double" value="60"/>
-      <Option name="component_pos_x" type="double" value="630"/>
-      <Option name="component_pos_y" type="double" value="180"/>
-      <Option name="component_width" type="double" value="120"/>
-      <Option name="name" type="QString" value="database_geotopografico_uvol"/>
       <Option name="outputs_collapsed" type="bool" value="true"/>
       <Option name="parameters_collapsed" type="bool" value="true"/>
     </Option>
@@ -853,6 +792,69 @@
       <Option name="component_pos_y" type="double" value="240"/>
       <Option name="component_width" type="double" value="120"/>
       <Option name="name" type="QString" value="geoportale"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+    </Option>
+    <Option name="gtdb_lazio_edifici" type="Map">
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1158"/>
+        <Option name="component_pos_y" type="double" value="33.000000000000085"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="gtdb_lazio_edifici"/>
+      <Option name="component_height" type="double" value="60"/>
+      <Option name="component_pos_x" type="double" value="630"/>
+      <Option name="component_pos_y" type="double" value="120"/>
+      <Option name="component_width" type="double" value="120"/>
+      <Option name="name" type="QString" value="gtdb_lazio_edifici"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+    </Option>
+    <Option name="gtdb_sardegna_uedil" type="Map">
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="887.2"/>
+        <Option name="component_pos_y" type="double" value="550.6"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="gtdb_sardegna_uedil"/>
+      <Option name="component_height" type="double" value="60"/>
+      <Option name="component_pos_x" type="double" value="780"/>
+      <Option name="component_pos_y" type="double" value="240"/>
+      <Option name="component_width" type="double" value="120"/>
+      <Option name="name" type="QString" value="gtdb_sardegna_uedil"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+    </Option>
+    <Option name="gtdb_sardegna_uvol" type="Map">
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1117.6000000000001"/>
+        <Option name="component_pos_y" type="double" value="137.0000000000001"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="gtdb_sardegna_uvol"/>
+      <Option name="component_height" type="double" value="60"/>
+      <Option name="component_pos_x" type="double" value="630"/>
+      <Option name="component_pos_y" type="double" value="180"/>
+      <Option name="component_width" type="double" value="120"/>
+      <Option name="name" type="QString" value="gtdb_sardegna_uvol"/>
       <Option name="outputs_collapsed" type="bool" value="true"/>
       <Option name="parameters_collapsed" type="bool" value="true"/>
     </Option>

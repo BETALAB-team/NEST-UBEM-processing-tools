@@ -24,7 +24,7 @@ To load the NEST processing tools:
 1. Open QGIS
 2. Go to *Setting* -> *Options*
 3. Move to the *Processing* tab, inside models. 
-4. Add the *path/to/the/repo/collections/nest_processing/tools* path to your list of models paths:
+4. Add the *path/to/the/repo/collections/nest_processing_tools/models* path to your list of models paths:
 
 
 <center><img src="image.png" alt="" style="height: 500px"></center>
