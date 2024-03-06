@@ -1,6 +1,40 @@
 <!DOCTYPE model>
 <Option type="Map">
   <Option name="children" type="Map">
+    <Option name="native:createspatialindex_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:createspatialindex"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="978"/>
+        <Option name="component_pos_y" type="double" value="86.00000000000003"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Buildings Spatial"/>
+      <Option name="component_height" type="double" value="60"/>
+      <Option name="component_pos_x" type="double" value="600"/>
+      <Option name="component_pos_y" type="double" value="390"/>
+      <Option name="component_width" type="double" value="120"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:createspatialindex_2"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="buildings_without_end_use"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="native:refactorfields_1" type="Map">
       <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
@@ -10,21 +44,21 @@
         <Option name="color" type="QString" value=""/>
         <Option name="component_description" type="QString" value=""/>
         <Option name="component_height" type="double" value="60"/>
-        <Option name="component_pos_x" type="double" value="996.8"/>
-        <Option name="component_pos_y" type="double" value="472.4000000000001"/>
+        <Option name="component_pos_x" type="double" value="1320"/>
+        <Option name="component_pos_y" type="double" value="640"/>
         <Option name="component_width" type="double" value="100"/>
         <Option name="outputs_collapsed" type="bool" value="true"/>
         <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
       <Option name="component_description" type="QString" value="Refactor fields"/>
       <Option name="component_height" type="double" value="30"/>
-      <Option name="component_pos_x" type="double" value="520"/>
-      <Option name="component_pos_y" type="double" value="315"/>
-      <Option name="component_width" type="double" value="200"/>
+      <Option name="component_pos_x" type="double" value="750"/>
+      <Option name="component_pos_y" type="double" value="405"/>
+      <Option name="component_width" type="double" value="120"/>
       <Option name="dependencies"/>
       <Option name="id" type="QString" value="native:refactorfields_1"/>
       <Option name="outputs" type="Map">
-        <Option name="Height added" type="Map">
+        <Option name="End Use Added" type="Map">
           <Option name="child_id" type="QString" value="native:refactorfields_1"/>
           <Option name="color" type="QString" value=""/>
           <Option name="comment" type="Map">
@@ -37,14 +71,14 @@
             <Option name="outputs_collapsed" type="bool" value="true"/>
             <Option name="parameters_collapsed" type="bool" value="true"/>
           </Option>
-          <Option name="component_description" type="QString" value="Height added"/>
+          <Option name="component_description" type="QString" value="End Use Added"/>
           <Option name="component_height" type="double" value="30"/>
-          <Option name="component_pos_x" type="double" value="730"/>
-          <Option name="component_pos_y" type="double" value="315"/>
+          <Option name="component_pos_x" type="double" value="940"/>
+          <Option name="component_pos_y" type="double" value="405"/>
           <Option name="component_width" type="double" value="200"/>
           <Option name="default_value" type="invalid"/>
           <Option name="mandatory" type="bool" value="false"/>
-          <Option name="name" type="QString" value="Height added"/>
+          <Option name="name" type="QString" value="End Use Added"/>
           <Option name="output_name" type="QString" value="OUTPUT"/>
           <Option name="outputs_collapsed" type="bool" value="true"/>
           <Option name="parameters_collapsed" type="bool" value="true"/>
@@ -58,7 +92,7 @@
             <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="List">
               <Option type="Map">
-                <Option name="expression" type="QString" value="if( &quot;Height&quot; is NULL,  &quot;height_calc&quot; , &quot;Height&quot;)"/>
+                <Option name="expression" type="QString" value="&quot;Height&quot;"/>
                 <Option name="length" type="int" value="10"/>
                 <Option name="name" type="QString" value="Height"/>
                 <Option name="precision" type="int" value="3"/>
@@ -76,7 +110,7 @@
                 <Option name="type_name" type="QString" value="integer"/>
               </Option>
               <Option type="Map">
-                <Option name="expression" type="QString" value="&quot;End Use&quot;"/>
+                <Option name="expression" type="QString" value="if(&quot;End Use&quot; is NULL, &quot;FinUse&quot;,&quot;End Use&quot;)"/>
                 <Option name="length" type="int" value="20"/>
                 <Option name="name" type="QString" value="End Use"/>
                 <Option name="precision" type="int" value="0"/>
@@ -85,7 +119,7 @@
                 <Option name="type_name" type="QString" value="text"/>
               </Option>
               <Option type="Map">
-                <Option name="expression" type="QString" value="&quot;Lower End Use&quot;"/>
+                <Option name="expression" type="QString" value="if(&quot;Lower End Use&quot; is NULL, &quot;FinUse&quot;, &quot;Lower End Use&quot;)"/>
                 <Option name="length" type="int" value="20"/>
                 <Option name="name" type="QString" value="Lower End Use"/>
                 <Option name="precision" type="int" value="0"/>
@@ -94,7 +128,7 @@
                 <Option name="type_name" type="QString" value="text"/>
               </Option>
               <Option type="Map">
-                <Option name="expression" type="QString" value="&quot;Upper End Use&quot;"/>
+                <Option name="expression" type="QString" value="if(&quot;Upper End Use&quot; is NULL, &quot;FinUse&quot;,&quot;Upper End Use&quot;)"/>
                 <Option name="length" type="int" value="20"/>
                 <Option name="name" type="QString" value="Upper End Use"/>
                 <Option name="precision" type="int" value="0"/>
@@ -213,17 +247,17 @@
         <Option name="color" type="QString" value=""/>
         <Option name="component_description" type="QString" value=""/>
         <Option name="component_height" type="double" value="60"/>
-        <Option name="component_pos_x" type="double" value="320"/>
-        <Option name="component_pos_y" type="double" value="115"/>
+        <Option name="component_pos_x" type="double" value="585.2"/>
+        <Option name="component_pos_y" type="double" value="272.8"/>
         <Option name="component_width" type="double" value="100"/>
         <Option name="outputs_collapsed" type="bool" value="true"/>
         <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" type="QString" value="Advanced Python field calculator"/>
-      <Option name="component_height" type="double" value="30"/>
-      <Option name="component_pos_x" type="double" value="370"/>
-      <Option name="component_pos_y" type="double" value="225"/>
-      <Option name="component_width" type="double" value="200"/>
+      <Option name="component_description" type="QString" value="End Use Calc"/>
+      <Option name="component_height" type="double" value="60"/>
+      <Option name="component_pos_x" type="double" value="750"/>
+      <Option name="component_pos_y" type="double" value="360"/>
+      <Option name="component_width" type="double" value="120"/>
       <Option name="dependencies"/>
       <Option name="id" type="QString" value="qgis:advancedpythonfieldcalculator_1"/>
       <Option name="outputs"/>
@@ -233,13 +267,13 @@
         <Option name="FIELD_LENGTH" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="10"/>
+            <Option name="static_value" type="int" value="25"/>
           </Option>
         </Option>
         <Option name="FIELD_NAME" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="height_calc"/>
+            <Option name="static_value" type="QString" value="FinUse"/>
           </Option>
         </Option>
         <Option name="FIELD_PRECISION" type="List">
@@ -251,32 +285,34 @@
         <Option name="FIELD_TYPE" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="1"/>
+            <Option name="static_value" type="int" value="2"/>
           </Option>
         </Option>
         <Option name="FORMULA" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="value = addHeight(&lt;Section_Keys>,&lt;Section_Values>,&lt;Height>)"/>
+            <Option name="static_value" type="QString" value="value = addEndUse(&lt;Section_Keys>,&lt;Section_Values>,&lt;End Use>)"/>
           </Option>
         </Option>
         <Option name="GLOBAL" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="def addHeight(key,value,height):&#xa;    valuecheck=1&#xa;    if value == None:&#xa;        valuecheck=None&#xa;    else:&#xa;        section_data=dict(zip(key,value))&#xa;        Height_keys=[&quot;P[1F]&quot;,&quot;P[2F]&quot;,&quot;P[3F]&quot;,&quot;P[4F+]&quot;]&#xa;        Height_data=[section_data[h] for h in Height_keys]&#xa;        floors=Height_data.index(max(Height_data))+1&#xa;    if height==None:&#xa;        if valuecheck==None:&#xa;            inheight=None&#xa;        else:&#xa;            inheight=3.5*floors&#xa;    else:&#xa;        inheight=height &#xa;    return inheight"/>
+            <Option name="static_value" type="QString" value="&#xa;import random&#xa;def addEndUse(key,value,enduse):&#xa;    if value==None:&#xa;        result=None&#xa;    else:&#xa;        section_data=dict(zip(key,value))&#xa;        Res_prob=float(section_data[&quot;P[Res]&quot;])&#xa;        prob_check=random.random()&#xa;        if prob_check&lt;Res_prob:&#xa;            result=&quot;Residential&quot;&#xa;        else:&#xa;            result=None&#xa;    return result"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="buildings_without_height"/>
-            <Option name="source" type="int" value="0"/>
+            <Option name="child_id" type="QString" value="native:createspatialindex_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
   <Option name="designerParameterValues" type="Map">
-    <Option name="aa" type="QgsProcessingOutputLayerDefinition">
+    <Option name="buildings_without_end_use" type="QString" value="Renamed_77a4ff1e_4f6d_4e4c_850a_fb492b50cccd"/>
+    <Option name="end_use_added" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
           <Option name="fileEncoding" type="QString" value="windows-1252"/>
@@ -288,73 +324,66 @@
         </Option>
       </Option>
     </Option>
-    <Option name="buildings_without_height" type="QString" value="Renamed_6f8716dd_f45a_49fe_b1d6_1028e7d23197"/>
   </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
   <Option name="internal_version" type="QString" value="Version2"/>
   <Option name="modelVariables"/>
   <Option name="model_group" type="QString" value=""/>
-  <Option name="model_name" type="QString" value="Heights ISTAT"/>
+  <Option name="model_name" type="QString" value="EndUse_ISTAT"/>
   <Option name="parameterDefinitions" type="Map">
-    <Option name="buildings_without_height" type="Map">
+    <Option name="buildings_without_end_use" type="Map">
       <Option name="data_types" type="List">
         <Option type="int" value="2"/>
       </Option>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option name="description" type="QString" value="Buildings_without_height"/>
+      <Option name="description" type="QString" value="Buildings without end use"/>
       <Option name="flags" type="int" value="0"/>
       <Option name="help" type="QString" value=""/>
       <Option name="metadata"/>
-      <Option name="name" type="QString" value="buildings_without_height"/>
+      <Option name="name" type="QString" value="buildings_without_end_use"/>
       <Option name="parameter_type" type="QString" value="vector"/>
     </Option>
-    <Option name="height_added" type="Map">
+    <Option name="end_use_added" type="Map">
       <Option name="create_by_default" type="bool" value="true"/>
       <Option name="data_type" type="int" value="-1"/>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option name="description" type="QString" value="Height added"/>
+      <Option name="description" type="QString" value="End Use Added"/>
       <Option name="flags" type="int" value="0"/>
       <Option name="help" type="QString" value=""/>
       <Option name="metadata" type="Map">
         <Option name="_modelChildId" type="QString" value="native:refactorfields_1"/>
-        <Option name="_modelChildOutputName" type="QString" value="Height added"/>
+        <Option name="_modelChildOutputName" type="QString" value="End Use Added"/>
         <Option name="_modelChildProvider" type="QString" value="native"/>
       </Option>
-      <Option name="name" type="QString" value="height_added"/>
+      <Option name="name" type="QString" value="end_use_added"/>
       <Option name="parameter_type" type="QString" value="sink"/>
       <Option name="supports_append" type="bool" value="true"/>
       <Option name="supports_non_file_outputs" type="bool" value="true"/>
     </Option>
   </Option>
-  <Option name="parameterOrder" type="StringList">
-    <Option type="QString" value="borders"/>
-    <Option type="QString" value="heights_geoportale"/>
-    <Option type="QString" value="istat_csv_data"/>
-    <Option type="QString" value="istat_shapefile"/>
-    <Option type="QString" value="istat_height_calculation_method"/>
-  </Option>
+  <Option name="parameterOrder"/>
   <Option name="parameters" type="Map">
-    <Option name="buildings_without_height" type="Map">
+    <Option name="buildings_without_end_use" type="Map">
       <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
         <Option name="color" type="QString" value=""/>
         <Option name="component_description" type="QString" value=""/>
         <Option name="component_height" type="double" value="60"/>
-        <Option name="component_pos_x" type="double" value="361.6"/>
-        <Option name="component_pos_y" type="double" value="160.60000000000002"/>
+        <Option name="component_pos_x" type="double" value="626.8000000000001"/>
+        <Option name="component_pos_y" type="double" value="318.40000000000003"/>
         <Option name="component_width" type="double" value="100"/>
         <Option name="outputs_collapsed" type="bool" value="true"/>
         <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" type="QString" value="buildings_without_height"/>
-      <Option name="component_height" type="double" value="30"/>
-      <Option name="component_pos_x" type="double" value="160"/>
-      <Option name="component_pos_y" type="double" value="225"/>
-      <Option name="component_width" type="double" value="200"/>
-      <Option name="name" type="QString" value="buildings_without_height"/>
+      <Option name="component_description" type="QString" value="buildings_without_end_use"/>
+      <Option name="component_height" type="double" value="90"/>
+      <Option name="component_pos_x" type="double" value="420"/>
+      <Option name="component_pos_y" type="double" value="375"/>
+      <Option name="component_width" type="double" value="120"/>
+      <Option name="name" type="QString" value="buildings_without_end_use"/>
       <Option name="outputs_collapsed" type="bool" value="true"/>
       <Option name="parameters_collapsed" type="bool" value="true"/>
     </Option>
