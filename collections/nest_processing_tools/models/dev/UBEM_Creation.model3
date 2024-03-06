@@ -440,7 +440,7 @@
   <Option name="internal_version" type="QString" value="Version2"/>
   <Option name="modelVariables"/>
   <Option name="model_group" type="QString" value=""/>
-  <Option name="model_name" type="QString" value="LegoBricks"/>
+  <Option name="model_name" type="QString" value="UBEM Creation"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="altimetria" type="Map">
       <Option name="data_types"/>
