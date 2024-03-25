@@ -1,6 +1,184 @@
 <!DOCTYPE model>
 <Option type="Map">
   <Option name="children" type="Map">
+    <Option name="model:EndUse_Default_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:EndUse_Default"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value="Adds a default value to the null end uses"/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="930"/>
+        <Option name="component_pos_y" type="double" value="450"/>
+        <Option name="component_width" type="double" value="120"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="EndUse Default"/>
+      <Option name="component_height" type="double" value="60"/>
+      <Option name="component_pos_x" type="double" value="930"/>
+      <Option name="component_pos_y" type="double" value="360"/>
+      <Option name="component_width" type="double" value="120"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:EndUse_Default_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="End Use Added" type="Map">
+          <Option name="child_id" type="QString" value="model:EndUse_Default_1"/>
+          <Option name="color" type="QString" value=""/>
+          <Option name="comment" type="Map">
+            <Option name="color" type="QString" value=""/>
+            <Option name="component_description" type="QString" value=""/>
+            <Option name="component_height" type="double" value="60"/>
+            <Option name="component_pos_x" type="double" value="0"/>
+            <Option name="component_pos_y" type="double" value="0"/>
+            <Option name="component_width" type="double" value="100"/>
+            <Option name="outputs_collapsed" type="bool" value="true"/>
+            <Option name="parameters_collapsed" type="bool" value="true"/>
+          </Option>
+          <Option name="component_description" type="QString" value="End Use Added"/>
+          <Option name="component_height" type="double" value="60"/>
+          <Option name="component_pos_x" type="double" value="1080"/>
+          <Option name="component_pos_y" type="double" value="360"/>
+          <Option name="component_width" type="double" value="120"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="End Use Added"/>
+          <Option name="output_name" type="QString" value="end_use_added"/>
+          <Option name="outputs_collapsed" type="bool" value="true"/>
+          <Option name="parameters_collapsed" type="bool" value="true"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="buildings_without_end_use" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="model:EndUse_ISTAT_1"/>
+            <Option name="output_name" type="QString" value="end_use_added"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="default_end_use" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="default_value"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:EndUse_ISTAT_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:EndUse_ISTAT"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value="255,178,178,255"/>
+        <Option name="component_description" type="QString" value="Add the end use data using ISTAT residential probability"/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="780"/>
+        <Option name="component_pos_y" type="double" value="450"/>
+        <Option name="component_width" type="double" value="120"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="EndUse ISTAT"/>
+      <Option name="component_height" type="double" value="59.999999999999986"/>
+      <Option name="component_pos_x" type="double" value="780"/>
+      <Option name="component_pos_y" type="double" value="360"/>
+      <Option name="component_width" type="double" value="120"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:EndUse_ISTAT_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="buildings_without_end_use" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="model:EndUse_UEDIL_1"/>
+            <Option name="output_name" type="QString" value="end_use_added"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:EndUse_OSM_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:EndUse_OSM"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value="229,215,127,128"/>
+        <Option name="component_description" type="QString" value="Add the end use information from OSM database"/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="480"/>
+        <Option name="component_pos_y" type="double" value="450"/>
+        <Option name="component_width" type="double" value="120"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="EndUse OSM"/>
+      <Option name="component_height" type="double" value="60"/>
+      <Option name="component_pos_x" type="double" value="480"/>
+      <Option name="component_pos_y" type="double" value="360"/>
+      <Option name="component_width" type="double" value="120"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:EndUse_OSM_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="buildings_without_end_use" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:createspatialindex_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:EndUse_UEDIL_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:EndUse_UEDIL"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1200"/>
+        <Option name="component_pos_y" type="double" value="415"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="EndUse UEDIL"/>
+      <Option name="component_height" type="double" value="60"/>
+      <Option name="component_pos_x" type="double" value="630"/>
+      <Option name="component_pos_y" type="double" value="360"/>
+      <Option name="component_width" type="double" value="120"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:EndUse_UEDIL_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="buildings_without_end_use" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="model:EndUse_OSM_1"/>
+            <Option name="output_name" type="QString" value="end_use_added"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="uedil" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="uedil"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="native:createspatialindex_1" type="Map">
       <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
@@ -35,75 +213,10 @@
         </Option>
       </Option>
     </Option>
-    <Option name="native:fieldcalculator_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
-      <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="native:fieldcalculator"/>
-      <Option name="color" type="QString" value=""/>
-      <Option name="comment" type="Map">
-        <Option name="color" type="QString" value=""/>
-        <Option name="component_description" type="QString" value="Dummy Null End use field to be filled"/>
-        <Option name="component_height" type="double" value="60"/>
-        <Option name="component_pos_x" type="double" value="480"/>
-        <Option name="component_pos_y" type="double" value="420"/>
-        <Option name="component_width" type="double" value="120"/>
-        <Option name="outputs_collapsed" type="bool" value="true"/>
-        <Option name="parameters_collapsed" type="bool" value="true"/>
-      </Option>
-      <Option name="component_description" type="QString" value="Add End Use Field"/>
-      <Option name="component_height" type="double" value="60"/>
-      <Option name="component_pos_x" type="double" value="480"/>
-      <Option name="component_pos_y" type="double" value="360"/>
-      <Option name="component_width" type="double" value="120"/>
-      <Option name="dependencies"/>
-      <Option name="id" type="QString" value="native:fieldcalculator_1"/>
-      <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="FIELD_LENGTH" type="List">
-          <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="0"/>
-          </Option>
-        </Option>
-        <Option name="FIELD_NAME" type="List">
-          <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="End Use"/>
-          </Option>
-        </Option>
-        <Option name="FIELD_PRECISION" type="List">
-          <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="0"/>
-          </Option>
-        </Option>
-        <Option name="FIELD_TYPE" type="List">
-          <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="0"/>
-          </Option>
-        </Option>
-        <Option name="FORMULA" type="List">
-          <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="NULL"/>
-          </Option>
-        </Option>
-        <Option name="INPUT" type="List">
-          <Option type="Map">
-            <Option name="child_id" type="QString" value="native:createspatialindex_1"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
   </Option>
   <Option name="designerParameterValues" type="Map">
-    <Option name="buildings_without_height" type="QString" value="Retained_fields_baff95de_fa67_4609_8b54_296edde4da94"/>
-    <Option name="fin" type="QgsProcessingOutputLayerDefinition">
+    <Option name="buildings_without_end_use" type="QString" value="Renamed_1f3abf32_a266_4697_a8aa_275c45546f4b"/>
+    <Option name="end_uses_added" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
           <Option name="fileEncoding" type="QString" value="windows-1252"/>
@@ -115,7 +228,6 @@
         </Option>
       </Option>
     </Option>
-    <Option name="geoportale" type="QString" value="GeoportaleNazionale_Altezza_Padova_2fad864e_ffb1_4bd5_9a7e_62774857c46a"/>
   </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
@@ -135,6 +247,46 @@
       <Option name="help" type="QString" value=""/>
       <Option name="metadata"/>
       <Option name="name" type="QString" value="buildings_without_end_use"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="default_value" type="Map">
+      <Option name="default" type="QString" value="Residential"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="Default Value"/>
+      <Option name="flags" type="int" value="10"/>
+      <Option name="help" type="QString" value=""/>
+      <Option name="metadata"/>
+      <Option name="multiline" type="bool" value="false"/>
+      <Option name="name" type="QString" value="default_value"/>
+      <Option name="parameter_type" type="QString" value="string"/>
+    </Option>
+    <Option name="end_use_added" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="End Use Added"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value=""/>
+      <Option name="metadata" type="Map">
+        <Option name="_modelChildId" type="QString" value="model:EndUse_Default_1"/>
+        <Option name="_modelChildOutputName" type="QString" value="End Use Added"/>
+        <Option name="_modelChildProvider" type="QString" value="model"/>
+      </Option>
+      <Option name="name" type="QString" value="end_use_added"/>
+      <Option name="parameter_type" type="QString" value="sink"/>
+      <Option name="supports_append" type="bool" value="true"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+    </Option>
+    <Option name="uedil" type="Map">
+      <Option name="data_types"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="UEDIL"/>
+      <Option name="flags" type="int" value="8"/>
+      <Option name="help" type="QString" value=""/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="uedil"/>
       <Option name="parameter_type" type="QString" value="vector"/>
     </Option>
   </Option>
@@ -164,6 +316,48 @@
       <Option name="component_pos_y" type="double" value="360"/>
       <Option name="component_width" type="double" value="110"/>
       <Option name="name" type="QString" value="buildings_without_end_use"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+    </Option>
+    <Option name="default_value" type="Map">
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="595"/>
+        <Option name="component_pos_y" type="double" value="15"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="default_value"/>
+      <Option name="component_height" type="double" value="60"/>
+      <Option name="component_pos_x" type="double" value="930"/>
+      <Option name="component_pos_y" type="double" value="270"/>
+      <Option name="component_width" type="double" value="120"/>
+      <Option name="name" type="QString" value="default_value"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+    </Option>
+    <Option name="uedil" type="Map">
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="916"/>
+        <Option name="component_pos_y" type="double" value="197.39999999999998"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="uedil"/>
+      <Option name="component_height" type="double" value="60"/>
+      <Option name="component_pos_x" type="double" value="630"/>
+      <Option name="component_pos_y" type="double" value="270"/>
+      <Option name="component_width" type="double" value="120"/>
+      <Option name="name" type="QString" value="uedil"/>
       <Option name="outputs_collapsed" type="bool" value="true"/>
       <Option name="parameters_collapsed" type="bool" value="true"/>
     </Option>

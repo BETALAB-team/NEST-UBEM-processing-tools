@@ -1,0 +1,363 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:refactorfields_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:refactorfields"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1218"/>
+        <Option name="component_pos_y" type="double" value="542.4000000000001"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Refactor fields"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="741.2"/>
+      <Option name="component_pos_y" type="double" value="385"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:refactorfields_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="Envelope Added" type="Map">
+          <Option name="child_id" type="QString" value="native:refactorfields_1"/>
+          <Option name="color" type="QString" value=""/>
+          <Option name="comment" type="Map">
+            <Option name="color" type="QString" value=""/>
+            <Option name="component_description" type="QString" value=""/>
+            <Option name="component_height" type="double" value="60"/>
+            <Option name="component_pos_x" type="double" value="221.2"/>
+            <Option name="component_pos_y" type="double" value="70"/>
+            <Option name="component_width" type="double" value="100"/>
+            <Option name="outputs_collapsed" type="bool" value="true"/>
+            <Option name="parameters_collapsed" type="bool" value="true"/>
+          </Option>
+          <Option name="component_description" type="QString" value="Envelope Added"/>
+          <Option name="component_height" type="double" value="30"/>
+          <Option name="component_pos_x" type="double" value="951.2"/>
+          <Option name="component_pos_y" type="double" value="385"/>
+          <Option name="component_width" type="double" value="200"/>
+          <Option name="default_value" type="Map">
+            <Option name="class" type="QString" value="QgsProcessingOutputLayerDefinition"/>
+            <Option name="create_options" type="Map">
+              <Option name="fileEncoding" type="QString" value="windows-1252"/>
+            </Option>
+            <Option name="sink" type="Map">
+              <Option name="active" type="bool" value="true"/>
+              <Option name="type" type="int" value="1"/>
+              <Option name="val" type="QString" value="TEMPORARY_OUTPUT"/>
+            </Option>
+          </Option>
+          <Option name="mandatory" type="bool" value="true"/>
+          <Option name="name" type="QString" value="Envelope Added"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+          <Option name="outputs_collapsed" type="bool" value="true"/>
+          <Option name="parameters_collapsed" type="bool" value="true"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="FIELDS_MAPPING" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="List">
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;Height&quot;"/>
+                <Option name="length" type="int" value="10"/>
+                <Option name="name" type="QString" value="Height"/>
+                <Option name="precision" type="int" value="3"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="6"/>
+                <Option name="type_name" type="QString" value="double precision"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;Floors&quot;"/>
+                <Option name="length" type="int" value="10"/>
+                <Option name="name" type="QString" value="Floors"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="2"/>
+                <Option name="type_name" type="QString" value="integer"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;End Use&quot;"/>
+                <Option name="length" type="int" value="20"/>
+                <Option name="name" type="QString" value="End Use"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;Lower End Use&quot;"/>
+                <Option name="length" type="int" value="20"/>
+                <Option name="name" type="QString" value="Lower End Use"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;Upper End Use&quot;"/>
+                <Option name="length" type="int" value="20"/>
+                <Option name="name" type="QString" value="Upper End Use"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="if(&quot;Envelope&quot; is NULL,&quot;FinEnv&quot; ,&quot;Envelope&quot;)"/>
+                <Option name="length" type="int" value="20"/>
+                <Option name="name" type="QString" value="Envelope"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;id&quot;"/>
+                <Option name="length" type="int" value="10"/>
+                <Option name="name" type="QString" value="id"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="2"/>
+                <Option name="type_name" type="QString" value="integer"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;Name&quot;"/>
+                <Option name="length" type="int" value="20"/>
+                <Option name="name" type="QString" value="Name"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;ExtWallCoeff&quot;"/>
+                <Option name="length" type="int" value="10"/>
+                <Option name="name" type="QString" value="ExtWallCoeff"/>
+                <Option name="precision" type="int" value="3"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="6"/>
+                <Option name="type_name" type="QString" value="double precision"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;VolCoeff&quot;"/>
+                <Option name="length" type="int" value="10"/>
+                <Option name="name" type="QString" value="VolCoeff"/>
+                <Option name="precision" type="int" value="3"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="6"/>
+                <Option name="type_name" type="QString" value="double precision"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;Cooling System&quot;"/>
+                <Option name="length" type="int" value="20"/>
+                <Option name="name" type="QString" value="Cooling System"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;Heating System&quot;"/>
+                <Option name="length" type="int" value="20"/>
+                <Option name="name" type="QString" value="Heating System"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;Section&quot;"/>
+                <Option name="length" type="int" value="20"/>
+                <Option name="name" type="QString" value="Section"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;Section_Keys&quot;"/>
+                <Option name="length" type="int" value="50"/>
+                <Option name="name" type="QString" value="Section_Keys"/>
+                <Option name="precision" type="int" value="3"/>
+                <Option name="sub_type" type="int" value="6"/>
+                <Option name="type" type="int" value="9"/>
+                <Option name="type_name" type="QString" value="doublelist"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;Section_Values&quot;"/>
+                <Option name="length" type="int" value="50"/>
+                <Option name="name" type="QString" value="Section_Values"/>
+                <Option name="precision" type="int" value="3"/>
+                <Option name="sub_type" type="int" value="10"/>
+                <Option name="type" type="int" value="11"/>
+                <Option name="type_name" type="QString" value="stringlist"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qgis:advancedpythonfieldcalculator_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:advancedpythonfieldcalculator_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:advancedpythonfieldcalculator"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="541.2"/>
+        <Option name="component_pos_y" type="double" value="185"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Advanced Python field calculator"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="580"/>
+      <Option name="component_pos_y" type="double" value="285"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:advancedpythonfieldcalculator_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="20"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="FinEnv"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="3"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="2"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="value = addEnvelope(&lt;Section_Keys>,&lt;Section_Values>)"/>
+          </Option>
+        </Option>
+        <Option name="GLOBAL" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="from itertools import accumulate&#xa;import random&#xa;def addEnvelope(key,value):&#xa;    valuecheck=1&#xa;    if value == None:&#xa;        return None&#xa;    else:&#xa;        section_data=dict(zip(key,value))&#xa;        Envelope_Keys=[&quot;P[0000-1919]&quot;, &quot;P[1920-1945]&quot;, &quot;P[1946-1960]&quot;,&#xa;                       &quot;P[1961-1970]&quot;, &quot;P[1971-1980]&quot;, &quot;P[1981-1990]&quot;,&#xa;                       &quot;P[1991-2000]&quot;, &quot;P[2001-2005]&quot;, &quot;P[2006-3000]&quot;]&#xa;        Envelope_data=[float(section_data[h]) for h in Envelope_Keys]&#xa;&#xa;        Possible_envelopes=[&quot;Before 1930&quot;,&quot;1930-1945&quot;,&quot;1945-1960&quot;,&#xa;                            &quot;1961-1970&quot;,&quot;1971-1980&quot;,&quot;1981-1990&quot;,&#xa;                            &quot;1991-2000&quot;,&quot;2000-2005&quot;,&quot;2005-2010&quot;,&#xa;                            &quot;After 2010&quot;]&#xa;        Probs=[Envelope_data[0]+0.4*Envelope_data[1],&#xa;               0.6*Envelope_data[1],&#xa;               Envelope_data[2],&#xa;               Envelope_data[3],&#xa;               Envelope_data[4],&#xa;               Envelope_data[5],&#xa;               Envelope_data[6],&#xa;               Envelope_data[7],&#xa;               0.8*Envelope_data[8],&#xa;               0.2*Envelope_data[8]]&#xa;        checkprob=random.random()&#xa;        Envelope_cumulative=list(accumulate(Probs))&#xa;        n=None;&#xa;        for i in range(len(Probs)):&#xa;            if checkprob&lt;Probs[i]:&#xa;                n=i&#xa;                break&#xa;        if n==None:&#xa;            return None&#xa;        Envelope=Possible_envelopes[n]&#xa;        return Envelope&#xa;"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="buildings_without_envelope"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues"/>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="internal_version" type="QString" value="Version2"/>
+  <Option name="modelVariables"/>
+  <Option name="model_group" type="QString" value=""/>
+  <Option name="model_name" type="QString" value="Envelope_ISTAT"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="buildings_without_envelope" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="2"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="Buildings_without_Envelope"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value=""/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="buildings_without_envelope"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="envelope_added" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="QgsProcessingOutputLayerDefinition">
+        <Option type="Map">
+          <Option name="create_options" type="Map">
+            <Option name="fileEncoding" type="QString" value="windows-1252"/>
+          </Option>
+          <Option name="sink" type="Map">
+            <Option name="active" type="bool" value="true"/>
+            <Option name="type" type="int" value="1"/>
+            <Option name="val" type="QString" value="TEMPORARY_OUTPUT"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="Envelope Added"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value=""/>
+      <Option name="metadata" type="Map">
+        <Option name="_modelChildId" type="QString" value="native:refactorfields_1"/>
+        <Option name="_modelChildOutputName" type="QString" value="Envelope Added"/>
+        <Option name="_modelChildProvider" type="QString" value="native"/>
+      </Option>
+      <Option name="name" type="QString" value="envelope_added"/>
+      <Option name="parameter_type" type="QString" value="sink"/>
+      <Option name="supports_append" type="bool" value="true"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters" type="Map">
+    <Option name="buildings_without_envelope" type="Map">
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="582.8"/>
+        <Option name="component_pos_y" type="double" value="230.60000000000002"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="buildings_without_envelope"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="381.2"/>
+      <Option name="component_pos_y" type="double" value="295"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="name" type="QString" value="buildings_without_envelope"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+    </Option>
+  </Option>
+</Option>
