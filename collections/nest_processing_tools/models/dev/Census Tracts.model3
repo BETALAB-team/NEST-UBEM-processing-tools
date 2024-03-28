@@ -952,6 +952,8 @@
             <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="List">
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;Height&quot;"/>
                 <Option name="length" type="int" value="10"/>
                 <Option name="name" type="QString" value="Height"/>
@@ -961,6 +963,8 @@
                 <Option name="type_name" type="QString" value="double precision"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;Floors&quot;"/>
                 <Option name="length" type="int" value="10"/>
                 <Option name="name" type="QString" value="Floors"/>
@@ -970,6 +974,8 @@
                 <Option name="type_name" type="QString" value="integer"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;End Use&quot;"/>
                 <Option name="length" type="int" value="20"/>
                 <Option name="name" type="QString" value="End Use"/>
@@ -979,6 +985,8 @@
                 <Option name="type_name" type="QString" value="text"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;Envelope&quot;"/>
                 <Option name="length" type="int" value="20"/>
                 <Option name="name" type="QString" value="Envelope"/>
@@ -988,6 +996,8 @@
                 <Option name="type_name" type="QString" value="text"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;id&quot;"/>
                 <Option name="length" type="int" value="10"/>
                 <Option name="name" type="QString" value="id"/>
@@ -997,6 +1007,8 @@
                 <Option name="type_name" type="QString" value="integer"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;Name&quot;"/>
                 <Option name="length" type="int" value="20"/>
                 <Option name="name" type="QString" value="Name"/>
@@ -1006,6 +1018,8 @@
                 <Option name="type_name" type="QString" value="text"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;ExtWallCoeff&quot;"/>
                 <Option name="length" type="int" value="10"/>
                 <Option name="name" type="QString" value="ExtWallCoeff"/>
@@ -1015,6 +1029,8 @@
                 <Option name="type_name" type="QString" value="double precision"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;VolCoeff&quot;"/>
                 <Option name="length" type="int" value="10"/>
                 <Option name="name" type="QString" value="VolCoeff"/>
@@ -1024,6 +1040,8 @@
                 <Option name="type_name" type="QString" value="double precision"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;Cooling System&quot;"/>
                 <Option name="length" type="int" value="20"/>
                 <Option name="name" type="QString" value="Cooling System"/>
@@ -1033,6 +1051,8 @@
                 <Option name="type_name" type="QString" value="text"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;Heating System&quot;"/>
                 <Option name="length" type="int" value="20"/>
                 <Option name="name" type="QString" value="Heating System"/>
@@ -1042,6 +1062,8 @@
                 <Option name="type_name" type="QString" value="text"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;Clusters&quot;"/>
                 <Option name="length" type="int" value="10"/>
                 <Option name="name" type="QString" value="Clusters"/>
@@ -1051,6 +1073,8 @@
                 <Option name="type_name" type="QString" value="int8"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="if(&quot;SEZIONE&quot; is NULL,'00000',&quot;SEZIONE&quot;)"/>
                 <Option name="length" type="int" value="20"/>
                 <Option name="name" type="QString" value="Section"/>
@@ -1060,6 +1084,8 @@
                 <Option name="type_name" type="QString" value="text"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;Section_Keys_2&quot;"/>
                 <Option name="length" type="int" value="50"/>
                 <Option name="name" type="QString" value="Section_Keys"/>
@@ -1069,6 +1095,8 @@
                 <Option name="type_name" type="QString" value="doublelist"/>
               </Option>
               <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
                 <Option name="expression" type="QString" value="&quot;Section_Values_2&quot;"/>
                 <Option name="length" type="int" value="50"/>
                 <Option name="name" type="QString" value="Section_Values"/>
@@ -1076,6 +1104,72 @@
                 <Option name="sub_type" type="int" value="10"/>
                 <Option name="type" type="int" value="11"/>
                 <Option name="type_name" type="QString" value="stringlist"/>
+              </Option>
+              <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
+                <Option name="expression" type="QString" value="NULL"/>
+                <Option name="length" type="int" value="15"/>
+                <Option name="name" type="QString" value="Height Source"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
+                <Option name="expression" type="QString" value="NULL"/>
+                <Option name="length" type="int" value="15"/>
+                <Option name="name" type="QString" value="Floor Height Source"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
+                <Option name="expression" type="QString" value="NULL"/>
+                <Option name="length" type="int" value="15"/>
+                <Option name="name" type="QString" value="EndUse Source"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
+                <Option name="expression" type="QString" value="NULL"/>
+                <Option name="length" type="int" value="15"/>
+                <Option name="name" type="QString" value="Envelope Source"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
+                <Option name="expression" type="QString" value="NULL"/>
+                <Option name="length" type="int" value="15"/>
+                <Option name="name" type="QString" value="Cooling System Source"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
+                <Option name="alias" type="QString" value=""/>
+                <Option name="comment" type="QString" value=""/>
+                <Option name="expression" type="QString" value="NULL"/>
+                <Option name="length" type="int" value="15"/>
+                <Option name="name" type="QString" value="Heating System Source"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
               </Option>
             </Option>
           </Option>
