@@ -23,6 +23,9 @@ In order to edit or create the process blocks, some important notes are to be co
 - To refactor the fields, for the desired variable ***X***, having calculated the dummy variable ***X_dummy*** it is possible to if statement, While for any other variable ***Y***, the code should be set to not change the variable:
 > X=if("X" is NULL, "X_dummy", "X") <br>
 > Y="Y"
+<br>
+<center><img src="Refrac.png" alt="" style="height: 250px"></center>
+<br>
 - If you want your changes to be integrated with the project, you need to save your changes. If it is a new model, you can save it in the same folder as others for the ease of access.
 
 ### Attribute Blocks
