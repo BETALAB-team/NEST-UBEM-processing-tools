@@ -1,77 +1,60 @@
-# NEST PNRR task 8 4 7 repository
+# NEST UBEM processing tools
 
-This repository is a set of QGIS functions to process national GIS dataset to create the input file for a UBEM
+This repository includes a set of QGIS processing models to create UBEM input dataset for a quick simulation in the [EUReCA](https://github.com/BETALAB-team/EUReCA) environment, starting from national GIS datasets. The project has been carried on in the context of the PNRR project NEST, task 8.4.7 (see below for futher information).
 
-Steps to run the processor:
+## Download the repository
 
-### 1. Download the repository
-
-Download the repository to your local storage either using the zip file
+Download the repository to your local storage either using the zip file, going to:
 
 > Code -> Download ZIP
 
 or directly cloning the repository.
 
-> git clone https://github.com/BETALAB-team/PNRR_847_GIS_workflow.git
+> git clone https://github.com/BETALAB-team/NEST-UBEM-processing-tools.git
 
 *Note: If you download the file as a zip file, you should first extract it.
- 
 
-### 2. Get the Inputs Ready
+## Setup QGIS
 
-The project needs four input files. 
+### Models path config
+This tools are based on the QGIS software. Be sure QGIS is installed on your PC.
 
-1. Census tract shapefile for the desired region. This data is downloadable from [the ISTAT website.](https://www.istat.it/it/archivio/104317#accordions )
+To load the NEST processing tools: 
 
-The shapefile can be found under the section "**Basi territoriali - dati definitivi (1991-2011)**"
-
-2. Census tract indicators, which is a csv file that can be found in the [same link](https://www.istat.it/it/archivio/104317#accordions).
-
-This file can be found under the section "**Variabili censuarie (1991-2011)**"
-
-3. Height data from national geoportal. This data is a wfs data that can be queried with the following link:
-
-> http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Edifici.map&
-
-4. Shapefile defining the borders of the desired area. This shapefile can be made using basic polygons in the QGIS. 
-
-*Note: You can see a sample input in the zip file located at the "Example_Padova" folder*
-
-**If you are using the case of Padova, you just need to extract the zip file that is located in**
-
-> Example_Padova\Data.zip
+1. Open QGIS
+2. Go to *Setting* -> *Options*
+3. Move to the *Processing* tab, inside models. 
+4. Add the *path/to/the/repo/collections/nest_processing_tools/models* path to your list of models paths:
 
 
-### 3. Open QGIS project
+<center><img src="image.png" alt="" style="height: 500px"></center>
 
-Open the project file 
+5. Click ok to load the models.
+6. Inside yor processing toolbar, in the models section, you can find the NEST UBEM processing algorithms
 
-> Project\Project.qgz
-
-Or if you want to use the Padova case, open the respective file from:
-
-> Example_Padova\Padova_Project.qgz
-
-*If when the project is opened you get a security warning* <span style="background-color: #fcb103; color: black; padding: 3px;">**Security Warning:** Python macros cannot currently be run</span>, *make sure to click on the "enable macros" option*
-
-### 4. Make Sure QuickOSM Plugin Is installed
-
-This project uses the QuickOSM plugin to get the data from OpenStreetMap database.
-
+### OSM plugin installation
+The tools provided by this repo rely on the [QuickOSM](https://plugins.qgis.org/plugins/QuickOSM/) plugin. This plugin is used to get the data from OpenStreetMap database. 
 If you have not yet installed this plugin go to the following section from the menu bar:
 
 > Menu ribbon -> Plugin -> Manage and Install Plugins
 
 Here search for the QuickOSM plugin and install it.
+If necessary, refer to the official [QGIS plugin guide](https://www.qgistutorials.com/en/docs/3/using_plugins.html). 
 
-### 5. Run the project
 
-Make sure to have an active internet connection.
+## Run a first example
 
-In the QGIS project file, from the toolbox, open the process named "WORKFLOW". It is found in:
+### Processing national datasets to extract significant UBEM features
 
-> Processing Toolbox -> Project models -> WORKFLOW
+Example files concerning [Padova](https://github.com/BETALAB-team/PNRR_847_GIS_workflow/tree/dev/Padova) and [Cagliari](https://github.com/BETALAB-team/PNRR_847_GIS_workflow/tree/dev/Cagliari) are provided with proper documentation. Try to open one project extract from national databases 
 
-Add the input files to the respective field. 
+## Acknowledgements
 
-Click on the Run
+- **Funder**: Project funded under the National Recovery and Resilience Plan (NRRP), Mission 4 Component 2 Investment 1.3 - Call for tender No. 1561 of 11.10.2022 of Ministero dell’Uni-
+versità e della Ricerca (MUR); funded by the European Union – NextGenerationEU
+
+- **Award Number**: Project code PE0000021, Concession Decree No. 1561 of 11.10.2022 adop-
+ted by Ministero dell’Università e della Ricerca (MUR), CUP - to be indicated by each Beneficiary, according to attachment E of Decree No. 1561/2022, Project title “Network 4 Energy Sustainable Transition – NEST”
+
+
+<center><img src="EU_Logo_PANTONE.png" alt="" style="height: 100px"></center>

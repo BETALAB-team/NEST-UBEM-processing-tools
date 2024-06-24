@@ -1,0 +1,17 @@
+.idea
+EUReCA/.idea/
+EUReCA/venv/
+EUReCA/logging.log
+QGIS Model
+Functions
+Project
+Repository_UNICA
+untitled1.py
+collections/Padova/census_tract/
+collections/Padova/Extent/
+collections/Padova/height/
+Padova/census_tract/
+Padova/Extent/
+Padova/height/
+Roma/RomaSampleInputs/Data
+**/SuPy.log
